@@ -121,7 +121,7 @@ Nuevamente el mismo resultado, aunque la descripción del https://www.google.com
 
 Resultado: 
 
-Aparece un nuevo infobox, aunque esta vez se trata de un pequeño texto extraído de la Wikipedia del que se sacan los dos fundadores.
+Aparece un nuevo https://duckduckgo.com/?q=founder+of+Cornell+University&t=hp&ia=about[infobox], aunque esta vez se trata de un pequeño texto extraído de la Wikipedia del que se sacan los dos fundadores.
 
 **Consulta literal introducida:** _where did Ezra Cornell live?_
 
@@ -148,31 +148,31 @@ Nos aparece un https://duckduckgo.com/?q=Andrew+Dickson+White+House&t=hp&ia=abou
 
 Resultado: 
 
-Obtenemos un banner de la Wikipedia, aunque desde la descripción del segundo enlace (Universidad de Cornell - Estudiar en USA - university-us.com) se puede leer directamente.
+Obtenemos un banner de la Wikipedia, aunque desde la descripción del https://duckduckgo.com/?q=fundador+de+la+universidad+de+Cornell&t=hp&ia=about[segundo enlace] (Universidad de Cornell - Estudiar en USA - university-us.com) se puede leer directamente.
 
 **Consulta literal introducida:** _Dónde vivía Ezra Cornell?_
 
 Resultado: 
         
-Obtenemos un infobox, en el cual entramos para comprobar la información que necesitamos.
+Obtenemos un https://duckduckgo.com/?q=D%C3%B3nde+viv%C3%ADa+Ezra+Cornell&t=hp&ia=about[infobox], en el cual https://en.wikipedia.org/wiki/Ezra_Cornell[entramos] para comprobar la información que necesitamos.
 
 **Consulta literal introducida:** _Dónde vivió Andrew Dickson White?_
 
 Resultado: 
         
-No aparece una respuesta directa, aunque en el artículo de la Wikipedia (primer enlace, título Andrew Dickson White - Wikipedia, la enciclopedia libre), aparece el nombre (Casa de White) debajo de la fotografía de la casa.
+https://duckduckgo.com/?q=Dónde+vivió+Andrew+Dickson+White%3F&t=h_&ia=about[No aparece una respuesta directa], aunque en el https://es.wikipedia.org/wiki/Andrew_Dickson_White[artículo] de la Wikipedia (primer enlace, título Andrew Dickson White - Wikipedia, la enciclopedia libre), aparece el nombre (Casa de White) debajo de la fotografía de la casa.
 
 **Consulta literal introducida:** _Casa de White_
 
 Resultado: 
          
-En Este caso, los resultados distan mucho de ser los deseados. 
+En Este caso, los https://duckduckgo.com/?q=Casa+de+White&t=hp&ia=videos[resultados] distan mucho de ser los deseados. 
 
 **Consulta literal introducida:** _Casa de White Andrew Dickson White_
 
 Resultado: 
          
-Aquí los resultados son algo más relacionados, aunque de ninguno de puede deducir el uso actual del edificio.
+Aquí los resultados son algo más https://duckduckgo.com/?q=Casa+de+White+Andrew+Dickson+White&t=hp&ia=about[relacionados], aunque de ninguno de puede deducir el uso actual del edificio.
 
 === baeza
 
@@ -182,25 +182,25 @@ Aquí los resultados son algo más relacionados, aunque de ninguno de puede dedu
 
 Resultado: 
 
-El primer resultado (wikipedia, título: Ricardo Baeza - Wikipedia, la enciclopedia libre) que nos sale habla de un escritor que murió en 1956, luego se ven unas páginas personales del director de Yahoo pero si entramos al segundo enlace de la Wikipedia (Ricardo Baeza Rodríguez - Wikipedia, la enciclopedia libre) vemos a un hombre que es chileno (como el director).
+El primer https://www.google.com/search?q=Ricardo+baeza&rlz=1C1GCEU_esES866ES866&oq=Ricardo+baeza&aqs=chrome..69i57j35i39j69i60j0l3.366j0j9&sourceid=chrome&ie=UTF-8[resultado] (wikipedia, título: Ricardo Baeza - Wikipedia, la enciclopedia libre) que nos sale habla de un escritor que murió en 1956, luego se ven unas páginas personales del director de Yahoo pero si entramos al https://es.wikipedia.org/wiki/Ricardo_Baeza_Rodr%C3%ADguez[segundo enlace] de la Wikipedia (Ricardo Baeza Rodríguez - Wikipedia, la enciclopedia libre) vemos a un hombre que es chileno (como el director).
 
 **Consulta literal introducida:** _Ricardo baeza rodríguez_
 
 Resultado:
 
-Los primeros resultados no son páginas personales.
+Los https://www.google.com/search?safe=active&rlz=1C1GCEU_esES866ES866&sxsrf=ACYBGNTgixuk49ej1aNsWzgOjafNJopYpw%3A1568299697483&ei=sVp6Xa6UHc2UgQaNma6wAQ&q=ricardo+baeza+rodr%C3%ADguez&oq=ricardo+baeza+rodr%C3%ADguez&gs_l=psy-ab.3..0i30.3696.4256..5005...0.0..0.86.169.2......0....1..gws-wiz.......35i304i39.FFCpjs7uZRg&ved=0ahUKEwjusPrSw8vkAhVNSsAKHY2MCxYQ4dUDCAs&uact=5[primeros resultados] no son páginas personales.
 
 **Consulta literal introducida:** _Ricardo baeza rodríguez homepage_
 
 Resultado:
 
-Nada de interés.
+https://www.google.com/search?safe=active&rlz=1C1GCEU_esES866ES866&sxsrf=ACYBGNQs8ylyH51ZuQAcYz_g_4D_sJEW0Q%3A1568299754231&ei=6lp6XczYDcWo8gL367iABg&q=Ricardo+baeza+rodr%C3%ADguez+homepage&oq=Ricardo+baeza+rodr%C3%ADguez+homepage&gs_l=psy-ab.3..35i39.3208.3208..4035...0.0..0.97.97.1......0....1..gws-wiz.6t_H8-h0MMY&ved=0ahUKEwjM9YHuw8vkAhVFlFwKHfc1DmAQ4dUDCAs&uact=5[Nada] de interés.
 
 **Consulta literal introducida:** _Ricardo baeza Spain_
 
 Resultado:
 
-En la tercera página de resultados aparece el blog de pesca (Ricardo Baeza Errazuriz – una pesca sin juicio)de un señor chileno llamado Ricardo Baeza.
+En la https://www.google.com/search?q=Ricardo+baeza+Spain&safe=active&sxsrf=ACYBGNTpZcfijAMsFoDQLeZUx0erNkZTLw:1568393944977&ei=2Mp7XYGnO_uejLsP_d2xyAo&start=20&sa=N&ved=0ahUKEwiB89Tfos7kAhV7D2MBHf1uDKkQ8tMDCKEB&biw=958&bih=959[tercera página] de resultados aparece el https://ricardobaezaerrazurizpescasinjuicio.wordpress.com/[blog de pesca] (Ricardo Baeza Errazuriz – una pesca sin juicio)de un señor chileno llamado Ricardo Baeza.
 
 ==== Búsqueda en castellano usando Google
 
@@ -211,8 +211,7 @@ Obviamos las dos primeras consultas porque son sólo un nombre, no importa el id
         
 Resultado:
 
-No sale nada de interés.
-
+No sale https://www.google.com/search?q=Ricardo+baeza+rodr%C3%ADguez+espa%C3%B1a&oq=Ricardo+baeza+rodr%C3%ADguez+espa%C3%B1a&aqs=chrome..69i57.654j0j0&sourceid=chrome&ie=UTF-8[nada de interés].
 
 ==== Búsqueda en inglés usando DuckDuckGo
 
@@ -220,18 +219,18 @@ No sale nada de interés.
 
 Resultado: 
 
-Aparecen las entradas de wikipedia que salían con Google y links a redes sociales. (Sale Ricardo Baeza Rodríguez).
+Aparecen las https://duckduckgo.com/?q=Ricardo+baeza&t=hp&ia=about[entradas de wikipedia] que salían con Google y links a redes sociales. (Sale Ricardo Baeza Rodríguez).
 
 **Consulta literal introducida:** _Ricardo baeza rodríguez_
 
 Resultado:
         
-Llegamos a un punto muerto.
+Llegamos a un https://duckduckgo.com/?q=Ricardo+baeza+rodr%C3%ADguez&t=hp&ia=about[punto muerto].
 
 
 ==== Búsqueda en castellano usando DuckDuckGo
 
-Tras las anteriores búsquedas, escribimos en el buscador “Ricardo baeza españa” y nos aparece la página de un hombre chileno llamado Ricardo Santander Baeza.
+Tras las anteriores búsquedas, escribimos en el buscador https://duckduckgo.com/?q=Ricardo+baeza+espa%C3%B1a&t=h_&ia=web[“Ricardo baeza españa”] y nos aparece la página de un hombre chileno llamado Ricardo Santander Baeza.
 
 === time-machine
 
@@ -241,13 +240,13 @@ Tras las anteriores búsquedas, escribimos en el buscador “Ricardo baeza espa�
 
 Resultado: 
 
-Del primer infobox concluimos que la película original es de 1960.
+Del primer https://www.google.com/search?safe=active&rlz=1C1GCEU_esES866ES866&sxsrf=ACYBGNQF0hyB1XouaGi8mZe02vwkUe0bHA%3A1568300656087&ei=cF56XbX6BNLGgQblzL7gAQ&q=original+Time+Machine+Movie&oq=original+Time+Machine+Movie&gs_l=psy-ab.3..0i203j0i22i30l2.7470.7470..7926...0.3..0.117.117.0j1......0....2j1..gws-wiz.......0i71.IIu6tOfxPJg&ved=0ahUKEwi18oacx8vkAhVSY8AKHWWmDxwQ4dUDCAs&uact=5[infobox] concluimos que la película original es de 1960.
 
 **Consulta literal introducida:** _Time Machine Movie 1960 casting_
 
 Resultado:
 
-Obtenemos un listado con las fotografías y nombres de los miembros del reparto. Del orden de aparición en el mismo, así como del banner lateral, sacamos en conclusión que el actor es Rod Taylor
+Obtenemos un https://www.google.com/search?safe=active&rlz=1C1GCEU_esES866ES866&sxsrf=ACYBGNTZ-JChDuJcTllIKRxz7csRJwmETQ%3A1568300665023&ei=eV56XeiOAZSbgQa71oaQDA&q=Time+Machine+Movie+1960+casting&oq=Time+Machine+Movie+1960+casting&gs_l=psy-ab.3...46507.60418..60576...0.2..0.115.1390.9j5......0....1..gws-wiz.......0i71j0i324j0i7i30j0j0i203j0i22i30j0i19.pzKXZi3-YLo&ved=0ahUKEwior6igx8vkAhWUTcAKHTurAcIQ4dUDCAs&uact=5[listado] con las fotografías y nombres de los miembros del reparto. Del orden de aparición en el mismo, así como del banner lateral, sacamos en conclusión que el actor es Rod Taylor
 
 ==== Búsqueda en castellano usando Google
 
@@ -255,13 +254,13 @@ Obtenemos un listado con las fotografías y nombres de los miembros del reparto.
         
 Resultado:
 
-De los primeros enlaces resultantes sabemos que la película se estrenó en España con el nombre de “El tiempo en sus manos” (exactamente, de la descripción del link de la wikipedia: The Time Machine (película de 1960) - Wikipedia, la …).
+De los https://www.google.com/search?q=Time+Machine+pel%C3%ADcula&oq=Time+Machine+pel%C3%ADcula&aqs=chrome..69i57j0l4.206j0j0&sourceid=chrome&ie=UTF-8[primeros enlaces] resultantes sabemos que la película se estrenó en España con el nombre de “El tiempo en sus manos” (exactamente, de la descripción del link de la wikipedia: The Time Machine (película de 1960) - Wikipedia, la …).
 
 **Consulta literal introducida:** _El tiempo en sus manos original_
         
 Resultado:
 
-Con el primer resultado (El tiempo en sus manos (1960) - Filmaffinity) descubrimos que es de 1960.
+Con el https://www.google.com/search?safe=active&rlz=1C1GCEU_esES866ES866&sxsrf=ACYBGNR8mf5EY_QbuOt0tGgYfNf6UKG9yg%3A1568300892842&ei=XF96XcCFM6-ChbIPtuS2iAw&q=El+tiempo+en+sus+manos+original&oq=El+tiempo+en+sus+manos+original&gs_l=psy-ab.3...147725.151435..151560...0.3..0.122.2011.19j3......0....1..gws-wiz.......0i71j0i7i30j0i67j0i8i7i30j0j0i8i30.G3rkZoYJGwY&ved=0ahUKEwjAo_mMyMvkAhUvQUEAHTayDcEQ4dUDCAs&uact=5[primer resultado] (El tiempo en sus manos (1960) - Filmaffinity) descubrimos que es de 1960.
 
 **Consulta literal introducida:** _El tiempo en sus manos 1960 reparto_
         
@@ -275,13 +274,13 @@ Se nos muestra el mismo listado que en la consulta en inglés, y de la misma for
 
 Resultado: 
 
-De los primeros enlaces sacamos en conclusión que se trata de una película de 1960 (por ejemplo, del primero: The Time Machine (1960) - IMDb).
+De los https://duckduckgo.com/?q=original+Time+machine+Movie&t=hp&ia=web[primeros enlaces] sacamos en conclusión que se trata de una película de 1960 (por ejemplo, del primero: The Time Machine (1960) - IMDb).
 
 **Consulta literal introducida:** _Time Machine Movie 1960 casting_
 
 Resultado: 
 
-Entramos en el primer enlace (The Time Machine (1960 film) - Wikipedia), que nos redirige a la Wikipedia, que incluye en el listado de actores el nombre del que encarna al protagonista, Rod Taylor.
+Entramos en el https://duckduckgo.com/?q=Time+Machine+Movie+1960+casting&t=hp&ia=web[primer enlace] (The Time Machine (1960 film) - Wikipedia), que nos redirige a la https://en.wikipedia.org/wiki/The_Time_Machine_(1960_film)[Wikipedia], que incluye en el listado de actores el nombre del que encarna al protagonista, Rod Taylor.
 
 ==== Búsqueda en castellano usando DuckDuckGo
 
@@ -289,19 +288,19 @@ Entramos en el primer enlace (The Time Machine (1960 film) - Wikipedia), que nos
         
 Resultado:
 
-Gracias a los primeros enlaces descubrimos que la película se estrenó con el nombre de “El tiempo en sus manos” en España (en la descripción de la wikipedia: The Time Machine (película de 1960) - Wikipedia, la …).
+Gracias a los https://duckduckgo.com/?q=Time+machine+pel%C3%ADcula&t=hp&ia=web[primeros enlaces] descubrimos que la película se estrenó con el nombre de “El tiempo en sus manos” en España (en la descripción de la wikipedia: The Time Machine (película de 1960) - Wikipedia, la …).
 
 **Consulta literal introducida:** _El tiempo en sus manos original_
         
 Resultado:
 
-Con el primer resultado (El tiempo en sus manos (1960) - FilmAffinity) descubrimos que es de 1960.
+Con el https://www.filmaffinity.com/es/film194894.html[primer resultado] (El tiempo en sus manos (1960) - FilmAffinity) descubrimos que es de 1960.
 
 **Consulta literal introducida:** _El tiempo en sus manos 1960 reparto_
         
 Resultado:
 
-Hacemos click en el primer resultado, (El tiempo en sus manos (1960) - FilmAffinity) que nos lleva FilmAffinity, donde nos aparece el listado de actores, con Rod Taylor como principal.
+Hacemos click en el https://duckduckgo.com/?q=El+tiempo+en+sus+manos+1960+reparto&t=hp&ia=web[primer resultado], (El tiempo en sus manos (1960) - FilmAffinity) que nos lleva FilmAffinity, donde nos aparece el listado de actores, con Rod Taylor como principal.
 
 === ny-mountains
        
@@ -311,7 +310,7 @@ Hacemos click en el primer resultado, (El tiempo en sus manos (1960) - FilmAffin
 
 Resultado: 
 
-Sale un infobox con todas las montañas de Nueva york, ordenado de mayor a menor. La mayor es Mount Marcy.
+Sale un https://www.google.com/search?q=tallest+mountains+new+york&rlz=1C1GCEU_esES866ES866&oq=tallest+mountains+new+york&aqs=chrome..69i57j0l5.382j0j4&sourceid=chrome&ie=UTF-8[infobox] con todas las montañas de Nueva york, ordenado de mayor a menor. La mayor es Mount Marcy.
 
 ==== Búsqueda en castellano usando Google
 
@@ -319,7 +318,7 @@ Sale un infobox con todas las montañas de Nueva york, ordenado de mayor a menor
 
 Resultado: 
 
-Sale el mismo infobox con todas las montañas de Nueva york La mayor sigue siendo el Monte Marcy.
+Sale el mismo https://www.google.com/search?client=firefox-b-d&biw=958&bih=964&sxsrf=ACYBGNTVca1j3HZG1RMQt8R61Hc_BnRP5g%3A1568301546280&ei=6mF6XdzjEIzHgQbKrLuACg&q=monta%C3%B1as+m%C3%A1s+altas+nueva+york&oq=monta%C3%B1as+m%C3%A1s+altas+nueva+york&gs_l=psy-ab.3...59476.65581..66262...0.0..0.124.2308.18j6......0....1..gws-wiz.......0i7i30j0i7i5i30j33i10.5V3kc0exinE&ved=0ahUKEwjcgMTEysvkAhWMY8AKHUrWDqAQ4dUDCAs&uact=5[infobox] con todas las montañas de Nueva york La mayor sigue siendo el Monte Marcy.
 
 ==== Búsqueda en inglés usando DuckDuckGo
 
@@ -327,7 +326,7 @@ Sale el mismo infobox con todas las montañas de Nueva york La mayor sigue siend
 
 Resultado: 
 
-El primer enlace es una recomendación de escalada, pero el segundo (New York's 100 Highest Mountains : Climbing, Hiking ...) es un ranking de las montañas, con el mismo resultado.
+El primer enlace es una recomendación de escalada, pero el https://www.summitpost.org/new-york-s-100-highest-mountains/193398[segundo] (New York's 100 Highest Mountains : Climbing, Hiking ...) es un ranking de las montañas, con el mismo resultado.
 
 ==== Búsqueda en castellano usando DuckDuckGo
 
@@ -335,31 +334,31 @@ El primer enlace es una recomendación de escalada, pero el segundo (New York's 
 
 Resultado: 
 
-Aparecen varios enlaces con algún listado, pero son de Estados Unidos en general.
+Aparecen varios https://duckduckgo.com/?q=monta%C3%B1as+m%C3%A1s+altas+nueva+york&t=hp&ia=web[enlaces] con algún listado, pero son de Estados Unidos en general.
 
 **Consulta literal introducida:** _ranking montañas más altas nueva york_
 
 Resultado: 
 
-Lo mismo.
+https://duckduckgo.com/?q=ranking+monta%C3%B1as+m%C3%A1s+altas+nueva+york&t=hp&ia=web[Lo mismo].
 
 **Consulta literal introducida:** _top montañas más altas nueva york_
 
 Resultado: 
 
-Lo mismo.
+https://duckduckgo.com/?q=top+monta%C3%B1as+m%C3%A1s+altas+nueva+york&t=hp&ia=web[Lo mismo].
 
 **Consulta literal introducida:** _listado montañas más altas nueva york_
 
 Resultado: 
 
-Tampoco sale nada.
+Tampoco sale https://duckduckgo.com/?q=listado+monta%C3%B1as+m%C3%A1s+altas+nueva+york&t=hp&ia=web[nada].
 
 **Consulta literal introducida:** _montañas nueva york_
 
 Resultado: 
 
-Nada, estamos en un punto muerto.
+https://duckduckgo.com/?q=monta%C3%B1as+nueva+york&t=hp&ia=web[Nada], estamos en un punto muerto.
 
 === purple-cow
 
@@ -369,13 +368,13 @@ Nada, estamos en un punto muerto.
 
 Resultado: 
 
-Con el banner de la derecha averiguamos que el autor es Seth Godin.
+Con el https://www.google.com/search?safe=active&rlz=1C1GCEU_esES866ES866&sxsrf=ACYBGNQldTfde85XLNlKP5DM36jq9LLX1A%3A1568302093216&ei=DWR6X[banner de la derecha] averiguamos que el autor es Seth Godin.
 
 **Consulta literal introducida:** _Seth Godin Twitter_
 
 Resultado: 
 
-El primer resultado (Seth Godin (@ThisIsSethsBlog) | Twitter) es el perfil de Twitter del autor.
+El https://www.google.com/search?safe=active&rlz=1C1GCEU_esES866ES866&sxsrf=ACYBGNQvbaU1hlL4BE9jMcUDqopzcl5fvA%3A1568302116548&ei=JGR6Xbb9IJLvgAbF2Lxg&q=Seth+Godin+twitter&oq=Seth+Godin+twitter&gs_l=psy-ab.3..0.2023.3442..3521...0.0..0.111.680.4j3......0....1..gws-wiz.......0i20i263j0i67j0i203.WSTlgr_v-5M&ved=0ahUKEwi2n7rUzMvkAhWSN8AKHUUsDwwQ4dUDCAs&uact=5[primer resultado] (Seth Godin (@ThisIsSethsBlog) | Twitter) es el https://twitter.com/thisissethsblog?lang=es[perfil de Twitter del autor].
 
 ==== Búsqueda en castellano usando Google
 
@@ -383,13 +382,13 @@ El primer resultado (Seth Godin (@ThisIsSethsBlog) | Twitter) es el perfil de Tw
 
 Resultado: 
 
-Obtenemos la misma información que con la consulta inglesa, aunque esta vez en español.
+Obtenemos la https://www.google.com/search?safe=active&rlz=1C1GCEU_esES866ES866&sxsrf=ACYBGNQITIq9VqTpd8-PVaG3Td1pnO2zUQ%3A1568302098265&ei=EmR6XfntD4qX8gLG_5bIAw&q=Purple+Cow+libro&oq=Purple+Cow+libro&gs_l=psy-ab.3..0i22i30l2.98710.99967..100207...0.0..0.103.640.4j3......0....1..gws-wiz.......35i39j0i67j0j0i203.OhnC1OvdBPc&ved=0ahUKEwj5vt7LzMvkAhWKi1wKHca_BTkQ4dUDCAs&uact=5[misma información] que con la consulta inglesa, aunque esta vez en español.
 
 **Consulta literal introducida:** _Seth Godin Twitter_
 
 Resultado: 
 
-El primer resultado (Seth Godin (@ThisIsSethsBlog) | Twitter) es el perfil de Twitter del autor.
+El https://www.google.com/search?safe=active&rlz=1C1GCEU_esES866ES866&sxsrf=ACYBGNQvbaU1hlL4BE9jMcUDqopzcl5fvA%3A1568302116548&ei=JGR6Xbb9IJLvgAbF2Lxg&q=Seth+Godin+twitter&oq=Seth+Godin+twitter&gs_l=psy-ab.3..0.2023.3442..3521...0.0..0.111.680.4j3......0....1..gws-wiz.......0i20i263j0i67j0i203.WSTlgr_v-5M&ved=0ahUKEwi2n7rUzMvkAhWSN8AKHUUsDwwQ4dUDCAs&uact=5[primer resultado] (Seth Godin (@ThisIsSethsBlog) | Twitter) es el perfil de Twitter del autor.
 
 ==== Búsqueda en inglés usando DuckDuckGo
 
@@ -397,13 +396,13 @@ El primer resultado (Seth Godin (@ThisIsSethsBlog) | Twitter) es el perfil de Tw
 
 Resultado: 
 
-Nos aparece un listado de productos con ese nombre, y por tanto el autor del libro en cuestión.
+Nos aparece un https://duckduckgo.com/?q=Purpel+Cow+book&t=hp&ia=shopping[listado de productos] con ese nombre, y por tanto el autor del libro en cuestión.
 
 **Consulta literal introducida:** _Seth Godin Twitter_
 
 Resultado: 
 
-Conseguimos como primer resultado (Seth Godin (@ThisIsSethsBlog) | Twitter) el perfil deseado.
+Conseguimos como https://duckduckgo.com/?q=Seth+Godin+Twitter&t=hp&ia=web[primer resultado] (Seth Godin (@ThisIsSethsBlog) | Twitter) el https://twitter.com/thisissethsblog?lang=es[perfil] deseado.
 
 ==== Búsqueda en castellano usando DuckDuckGo
 
@@ -411,13 +410,13 @@ Conseguimos como primer resultado (Seth Godin (@ThisIsSethsBlog) | Twitter) el p
 
 Resultado: 
 
-Nos aparece un listado de productos con ese nombre, y por tanto el autor del libro en cuestión.
+Nos aparece un https://duckduckgo.com/?q=Purple+Cow+libro&t=hp&ia=shopping[listado de productos] con ese nombre, y por tanto el autor del libro en cuestión.
 
 **Consulta literal introducida:** _Seth Godin Twitter_
 
 Resultado: 
 
-Conseguimos como primer resultado (Seth Godin (@ThisIsSethsBlog) | Twitter) el perfil deseado.
+Conseguimos como https://duckduckgo.com/?q=Seth+Godin+Twitter&t=hp&ia=web[primer resultado] (Seth Godin (@ThisIsSethsBlog) | Twitter) el perfil deseado.
 
 === 1000-acres
         
@@ -427,7 +426,7 @@ Conseguimos como primer resultado (Seth Godin (@ThisIsSethsBlog) | Twitter) el p
 
 Resultado: 
 
-En el  segundo enlace (1000 Acres Ranch Resort - DudeRanch.com) encontramos lo que parece la página principal que se nos pide, pero al entrar sale que el link es otro (www.1000acres.com), al darle nos redirecciona a la página de ejemplo de Apache.
+En el https://www.duderanch.com/new-york/1000-acres-ranch-resort/[segundo enlace] (1000 Acres Ranch Resort - DudeRanch.com) encontramos lo que parece la página principal que se nos pide, pero al entrar sale que el link es otro (www.1000acres.com), al darle nos redirecciona a http://www.1000acres.com[la página de ejemplo de Apache].
 
 ==== Búsqueda en castellano usando Google
 
@@ -453,13 +452,13 @@ Mismo resultado que el anterior.
 
 Resultado: 
 
-Aparece un infobox con un texto del que se puede sacar que la arsfenamina es el primer antibiótico moderno y, aunque en el mismo infobox sale el nombre “Ehrlich “, no podemos confirmar aún el descubridor de éste.
+Aparece un https://www.google.com/search?safe=active&sxsrf=ACYBGNTL_nsxBmjBsQ7b-CrBmQxWBlULPg%3A1568386798187&ei=7q57XeT2CufBlwTYiLDYDg&q=The+first+modern+antibiotic&oq=The+first+modern+antibiotic&gs_l=psy-ab.3..35i39j0i8i30l2.1744.2374..2503...0.0..0.93.186.2......0....1..gws-wiz.......35i304i39.i4xf6ElttME&ved=0ahUKEwjkpeePiM7kAhXn4IUKHVgEDOsQ4dUDCAs&uact=5[infobox] con un texto del que se puede sacar que la arsfenamina es el primer antibiótico moderno y, aunque en el mismo infobox sale el nombre “Ehrlich “, no podemos confirmar aún el descubridor de éste.
 
 **Consulta literal introducida:** _arsphenamine_
 
 Resultado: 
 
-Salen unas páginas en wikipedia (la primera, Arsfenamina - Wikipedia, la enciclopedia libre, en castellano, seguramente porque el ordenador está en ese idioma) en las que, al entrar, vemos que el descubridor fue Paul Ehrlich.
+Salen unas https://www.google.com/search?q=arsphenamine&oq=arsphenamine&aqs=chrome..69i57.182j0j0&sourceid=chrome&ie=UTF-8[páginas en wikipedia] (la primera, Arsfenamina - Wikipedia, la enciclopedia libre, en castellano, seguramente porque el ordenador está en ese idioma) en las que, al entrar, vemos que el descubridor fue Paul Ehrlich.
 
 ==== Búsqueda en castellano usando Google 
 
@@ -467,13 +466,13 @@ Salen unas páginas en wikipedia (la primera, Arsfenamina - Wikipedia, la encicl
 
 Resultado: 
 
-Nada
+https://www.google.com/search?q=cu%C3%A1l+es+el+primer+antibiotico+moderno%3F&oq=cu%C3%A1l+es+el+primer+antibiotico+moderno%3F&aqs=chrome..69i57j69i60.734j0j0&sourceid=chrome&ie=UTF-8[Nada]
 
 **Consulta literal introducida:** _primer antibiótico moderno_
 
 Resultado: 
 
-Salen  un infobox y varios enlaces sin nada interesante, pero el octavo enlace (Historia de los antibióticos - Hospital Italiano) lleva a un pdf en el que se podría entender que el primer medicamento moderno fue el salvarsán (otra forma de llamar a la arsfenamina) y que su descubridor fue Paul Ehrlich.
+Salen  un https://www.google.com/search?safe=active&sxsrf=ACYBGNQj5cne0z6n-z3A9BFs-68ODku9AQ%3A1568387395503&ei=Q7F7XeelHuWugwf577tY&q=+primer+antibiotico+moderno&oq=+primer+antibiotico+moderno&gs_l=psy-ab.3...251394.252615..253182...0.2..0.145.242.1j1......0....1..gws-wiz.......0i71.OUrO13meOIM&ved=0ahUKEwin09Csis7kAhVl1-AKHfn3DgsQ4dUDCAs&uact=5[infobox y varios enlaces] sin nada interesante, pero el octavo enlace (Historia de los antibióticos - Hospital Italiano) lleva a un https://www.hospitalitaliano.org.ar/multimedia/archivos/noticias_attachs/47/documentos/7482_102-111-belloso.pdf[pdf] en el que se podría entender que el primer medicamento moderno fue el salvarsán (otra forma de llamar a la arsfenamina) y que su descubridor fue Paul Ehrlich.
 
 ==== Búsqueda en inglés usando DuckDuckGo 
 
@@ -481,7 +480,7 @@ Salen  un infobox y varios enlaces sin nada interesante, pero el octavo enlace (
 
 Resultado: 
 
-En el octavo enlace (A Brief History of the Antibiotic Era: Lessons Learned and …) se puede encontrar una página que dice que tanto Paul Ehrlich como Alexander Fleming fueron los primeros, pero si se sigue leyendo se llega a la conclusión que de los dos, el primero fue Ehrlich.
+En el https://duckduckgo.com/?q=The+first+modern+antibiotic&t=hk&ia=web[octavo enlace] (A Brief History of the Antibiotic Era: Lessons Learned and …) se puede encontrar una https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3109405/[página] que dice que tanto Paul Ehrlich como Alexander Fleming fueron los primeros, pero si se sigue leyendo se llega a la conclusión que de los dos, el primero fue Ehrlich.
 
 ==== Búsqueda en castellano usando DuckDuckGo 
 
@@ -489,19 +488,19 @@ En el octavo enlace (A Brief History of the Antibiotic Era: Lessons Learned and 
 
 Resultado: 
 
-Nada
+https://duckduckgo.com/?q=cu%C3%A1l+es+el+primer+antibiotico+moderno%3F&t=h_&ia=web[Nada]
 
 **Consulta literal introducida:** _primer antibiotico moderno_
 
 Resultado: 
 
-Nada
+https://duckduckgo.com/?q=primer+antibiotico+moderno&t=h_&ia=web[Nada]
 
 **Consulta literal introducida:** _antibioticos modernos_
 
 Resultado: 
 
-Salen páginas relacionadas con los antibióticos, como anteriormente, pero ninguno habla de medicamentos modernos ni, mucho menos, del primero. No se puede saber quién fue.
+Salen https://duckduckgo.com/?q=antibioticos+modernos&t=h_&ia=web[páginas] relacionadas con los antibióticos, como anteriormente, pero ninguno habla de medicamentos modernos ni, mucho menos, del primero. No se puede saber quién fue.
 
 === michael-jordan
 
@@ -511,7 +510,7 @@ Salen páginas relacionadas con los antibióticos, como anteriormente, pero ning
 
 Resultado: 
 
-En general resutlados que deseamos, esto es, sobre el Michael Jordan perteneciente al departamento de estadística de la Unviersidad de Berkeley. Su página personal figura en segundo lugar (Michael I. Jordan's Home Page - EECS at UC Berkeley).
+En general https://www.google.com/search?client=firefox-b-d&q=michael+jordan+statistician[resutlados] que deseamos, esto es, sobre el Michael Jordan perteneciente al departamento de estadística de la Unviersidad de Berkeley. Su https://people.eecs.berkeley.edu/~jordan/[página personal] figura en segundo lugar (Michael I. Jordan's Home Page - EECS at UC Berkeley).
 
 ==== Búsqueda en castellano usando Google 
 
@@ -519,19 +518,19 @@ En general resutlados que deseamos, esto es, sobre el Michael Jordan pertenecien
 
 Resultado: 
 
-Al contrario que con su equivalente inglés, al realizar la consulta en castellano nos aparecen casi de forma exclusiva resultados relacionados con el jugador de la NBA.
+Al contrario que con su equivalente inglés, al realizar la consulta en castellano nos aparecen casi de forma exclusiva https://www.google.com/search?client=firefox-b-d&sxsrf=ACYBGNRx1BecTmti5xp22hnNofG7_6QV1Q%3A1568569874200&ei=Enp-XefLC4zagwec45GICw&q=michael+jordan+estad%C3%ADstico&oq=michael+jordan+estad%C3%ADstico&gs_l=psy-ab.3..33i160.934.3687..4561...0.0..0.229.1475.0j10j1......0....1..gws-wiz.......0i131i20i263i70i251j0i131j0j0i20i263j0i203j0i10j0i22i30.GII9ISCmpHk&ved=0ahUKEwjnnKCRstPkAhUM7eAKHZxxBLEQ4dUDCAo&uact=5[resultados] relacionados con el jugador de la NBA.
 
 **Consulta literal introducida:** _michael jordan matemático_
 
 Resultado: 
 
-Aunque sigue apareciendo en general información sobre el jugador de baloncesto, el tercer resultado se corresponde a la Wikipedia portuguesa, donde podemos ver que Michael Jordan da clases en la Universidad de Berkeley (Michael Irwin Jordan – Wikipédia, a enciclopédia livre).
+Aunque sigue apareciendo en general información sobre el jugador de baloncesto, el tercer resultado se corresponde a la https://pt.wikipedia.org/wiki/Michael_Irwin_Jordan[Wikipedia portuguesa], donde podemos ver que Michael Jordan da clases en la Universidad de Berkeley (Michael Irwin Jordan – Wikipédia, a enciclopédia livre).
 
 **Consulta literal introducida:** _michael jordan berkley_
 
 Resultado: 
 
-Ahora ya nos aparecen resultados relacionados con el matemático, entre ellos su página web en segundo lugar (Michael I. Jordan's Home Page - EECS at UC Berkeley).
+Ahora ya nos aparecen https://www.google.com/search?client=firefox-b-d&sxsrf=ACYBGNTWa15qNwFc7-dmuz1SY5Ifmk4ysA%3A1568570370921&ei=Anx-Xf7zN-nYgwe_pKrYCg&q=michael+jordan+berkley&oq=michael+jordan+berkley&gs_l=psy-ab.3..0i10i203j0i22i10i30.2060.3782..4097...0.0..0.170.997.0j7......0....1..gws-wiz.......0i131i20i263j0j0i203j0i22i30j0i8i13i30.D3Ejkes55w4&ved=0ahUKEwj-_I3-s9PkAhVp7OAKHT-SCqsQ4dUDCAo&uact=5[resultados] relacionados con el matemático, entre ellos su https://www.stat.berkeley.edu/~jordan/[página web] en segundo lugar (Michael I. Jordan's Home Page - EECS at UC Berkeley).
 
 ==== Búsqueda en inglés usando DuckDuckGo 
 
@@ -539,7 +538,7 @@ Ahora ya nos aparecen resultados relacionados con el matemático, entre ellos su
 
 Resultado: 
 
-El primer resultado es directamente la página que buscábamos (Michael I. Jordan's Home Page - EECS at UC Berkeley).
+El primer resultado es directamente la https://people.eecs.berkeley.edu/~jordan/[página] que buscábamos (Michael I. Jordan's Home Page - EECS at UC Berkeley).
 
 ==== Búsqueda en castellano usando DuckDuckGo 
 
@@ -547,19 +546,19 @@ El primer resultado es directamente la página que buscábamos (Michael I. Jorda
 
 Resultado: 
 
-Mismo panorama que en el caso de Google, información sobre el deportista.
+https://duckduckgo.com/?q=michael+jordan+estadistico&atb=v186-5&ia=web[Mismo panorama] que en el caso de Google, información sobre el deportista.
 
 **Consulta literal introducida:** _michael jordan matemático_
 
 Resultado: 
 
-Nefastos resultados nuevamente.
+https://duckduckgo.com/?q=michael+jordan+matematico&atb=v186-5&ia=web[Nefastos resultados] nuevamente.
 
 **Consulta literal introducida:** _michael jordan paper estadística_
 
 Resultado: 
 
-Nuevamente, ningún resultado que tenga que ver con el matemático.
+Nuevamente, https://duckduckgo.com/?q=michael+jordan+paper+estad%C3%ADstica&atb=v186-5&ia=web[ningún resultado] que tenga que ver con el matemático.
 
 === emeril
 
@@ -569,7 +568,7 @@ Nuevamente, ningún resultado que tenga que ver con el matemático.
 
 Resultado: 
 
-Varias páginas y redes sociales, pero si entramos a la página de facebook (Emeril Lagasse - Home | Facebook) vemos una cuenta verificada de un chef llamado Emeril Lagasse, y si vamos al apartado de “Información” vemos que tu página web es esta (http://emerils.com), pero actualmente no existe.
+https://www.google.com/search?q=emeril&oq=emeril&aqs=chrome..69i57j0l5.1063j0j0&sourceid=chrome&ie=UTF-8[Varias páginas y redes sociales], pero si entramos a la https://www.facebook.com/Emeril/[página de facebook] (Emeril Lagasse - Home | Facebook) vemos una cuenta verificada de un chef llamado Emeril Lagasse, y si vamos al apartado de “Información” vemos que tu página web es esta (http://emerils.com), pero actualmente no existe.
 
 ==== Búsqueda en castellano usando Google 
 
@@ -581,7 +580,7 @@ Como en inglés (_emeril_ es un nombre propio).
 
 Resultado: 
 
-Después del infobox, y obviando los anuncios, sale su página directamente (Emeril Lagasse's Restaurants), y como pasaba anteriormente, no existe.
+Después del infobox, y obviando los anuncios, sale https://duckduckgo.com/?q=emeril&t=hp&ia=about[su página directamente] (Emeril Lagasse's Restaurants), y como pasaba anteriormente, no existe.
 
 ==== Búsqueda en castellano usando DuckDuckGo 
 
@@ -595,7 +594,7 @@ Como en inglés ya que se usó un nombre propio como consulta.
 
 Resultado:
 
-Obtenemos varios resultados, entre ellos la imagen original. Aparece al final de la primera página de resultados la entrada de la Wikipedia para ese episodio, que ahora sabemo se llama “Homer the Vigilante”. Asimismo, podemos comprobar que la escena de la imagen es una sátira de la película “Dr. Strangelove”. Siguiendo el enlace hasta la página de la Wikipedia de dicha película comprobamos que el personaje original se llamaba Major T.J. “King” Kong, interpretado por el actor Slim Pickens.
+Obtenemos https://www.google.com/search?sxsrf=ACYBGNTDqFOIUGtR32Ehv7qrG8QFBlJneg%3A1568723355595&source=hp&ei=m9GAXdjYIY2NlwT-hITIBg&q=homer+simpson+riding+bomb&oq=homer+simpson+riding+&gs_l=psy-ab.3.0.0i203l4j0i22i30l4.782.9556..10498...1.0..0.176.2434.7j15......0....1..gws-wiz.......0i131j0j35i39j0i10j33i160.-zWsJg7JRq8[varios resultados], entre ellos la imagen original. Aparece al final de la primera página de resultados la entrada de la Wikipedia para ese episodio, que ahora sabemo se llama “Homer the Vigilante”. Asimismo, podemos comprobar que la escena de la imagen es una sátira de la película “Dr. Strangelove”. Siguiendo el enlace hasta la página de la Wikipedia de dicha película comprobamos que el personaje original se llamaba Major T.J. “King” Kong, interpretado por el actor Slim Pickens.
 
 ==== Búsqueda en castellano usando Google
 
@@ -603,7 +602,7 @@ Obtenemos varios resultados, entre ellos la imagen original. Aparece al final de
 
 Resultado:
 
-Nuevamente obtenemos un listado de resultados similar al de la consulta en inglés, figurando además la entrada de la Wikipedia en Español del episodio como primer enlace, pudiendo así obtener las mismas conclusiones que en el caso anterior.
+Nuevamente obtenemos un https://www.google.com/search?sxsrf=ACYBGNQ8NUM4GOIyhKJfIYFvvF0z-LdVhA%3A1568723851653&source=hp&ei=i9OAXaW7JZKsacP9lNgF&q=homer+simpson+encima+de+una+bomba&oq=homer+simpson+encima+de+una+bomba&gs_l=psy-ab.3..33i22i29i30.1174.5874..6270...0.0..0.191.4061.4j29......0....1..gws-wiz.......35i39i19j35i39j0i131j0j0i67j0i131i67j0i20i263j0i203j0i22i30j33i160.Gmh9FOMGp5A&ved=0ahUKEwjlrLTf79fkAhUSVhoKHcM-BVsQ4dUDCAU&uact=5[listado de resultados] similar al de la consulta en inglés, figurando además la entrada de la https://es.wikipedia.org/wiki/Wikipedia_en_espa%C3%B1ol[Wikipedia en Español] del episodio como primer enlace, pudiendo así obtener las mismas conclusiones que en el caso anterior.
 
 ==== Búsqueda en inglés usando DuckDuckGo
 
@@ -611,7 +610,7 @@ Nuevamente obtenemos un listado de resultados similar al de la consulta en ingl�
 
 Resultado:
 
-En general, resultados más generalistas que empleando Google, aunque sí que se nos remite a la entrada de la Wikipedia ya mencionada.
+En general, https://duckduckgo.com/?q=homer+simpson+riding+a+bomb&t=ffab&atb=v186-2&ia=videos[resultados más generalistas] que empleando Google, aunque sí que se nos remite a la entrada de la Wikipedia ya mencionada.
 
 ==== Búsqueda en castellano usando DuckDuckGo
 
@@ -619,13 +618,13 @@ En general, resultados más generalistas que empleando Google, aunque sí que se
 
 Resultado:
 
-Aunque nos aparecen varios vídeos e imágenes del episodio en cuestión, no nos aparece directamente el enlace de la Wikipedia, aunque sí que podemos conocer el nombre del episodio: “Homer the Vigilante”.
+Aunque nos https://duckduckgo.com/?q=homer+simpson+montado+en+una+bomba&t=ffab&atb=v186-2&ia=videos[aparecen] varios vídeos e imágenes del episodio en cuestión, no nos aparece directamente el enlace de la Wikipedia, aunque sí que podemos conocer el nombre del episodio: “Homer the Vigilante”.
 
 **Consulta literal introducida:** _homer the vigilante_
 
 Resultado:
 
-Obtenemos ya en los primeros resultados el enlace a la página de Wikipedia, pudiendo llegar a las conclusiones alcanzadas en las anteriores consultas.
+Obtenemos ya en los https://duckduckgo.com/?q=homer+el+vigilante&t=ffab&atb=v186-2&ia=web[primeros] resultados el https://es.wikipedia.org/wiki/Homer_the_Vigilante[enlace] a la página de Wikipedia, pudiendo llegar a las conclusiones alcanzadas en las anteriores consultas.
 
 === cmu
 
@@ -635,7 +634,7 @@ Obtenemos ya en los primeros resultados el enlace a la página de Wikipedia, pud
 
 Resultado: 
 
-El primer resultado (Apply for Housing - Carnegie Mellon University) es la página para solicitar el alojamiento y en ella encontramos un apartado para los estudiantes graduados, aunque no parece haber una homepage solo dedicada a ellos..
+El https://www.google.com/search?q=graduate+housing+at+Carnegie+Mellon+University&oq=graduate+housing+at+Carnegie+Mellon+University&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8[primer resultado] (Apply for Housing - Carnegie Mellon University) es la página para solicitar el alojamiento y en ella encontramos un apartado para los estudiantes graduados, aunque no parece haber una homepage solo dedicada a ellos..
 
 ==== Búsqueda en castellano usando Google 
 
@@ -643,7 +642,7 @@ El primer resultado (Apply for Housing - Carnegie Mellon University) es la pági
 
 Resultado: 
 
-Uno de los resultados del final es la wikipedia (Universidad Carnegie Mellon - Wikipedia, la enciclopedia libre), si entramos encontramos el link de la página(http://www.cmu.edu) de la universidad, pero debido a que la página está en inglés, da igual lo que escribamos en castellano porque los resultados no tienen relación con la consulta, si se pudiera buscar en inglés la encontraríamos como anteriormente.
+https://www.google.com/search?q=alojamiento+para+graduados+en+la+universidad+Carnegie+Mellon&oq=alojamiento+para+graduados+en+la+universidad+Carnegie+Mellon&aqs=chrome..69i57j69i60.151j0j0&sourceid=chrome&ie=UTF-8[Uno de los resultados] del final es la https://es.wikipedia.org/wiki/Universidad_Carnegie_Mellon[wikipedia] (Universidad Carnegie Mellon - Wikipedia, la enciclopedia libre), si entramos encontramos el link de la página(http://www.cmu.edu) de la universidad, pero debido a que la página está en inglés, da igual lo que escribamos en castellano porque los resultados no tienen relación con la consulta, si se pudiera buscar en inglés la encontraríamos como anteriormente.
 
 Debido a que en su página no salen resultados y los del navegador no sirven, hemos llegado a un punto muerto.
 
@@ -653,7 +652,7 @@ Debido a que en su página no salen resultados y los del navegador no sirven, he
 
 Resultado: 
 
-Sale también la página de la universidad en la que se puede llegar a la homepage navegando por ella.
+Sale también la https://duckduckgo.com/?q=graduate+housing+at+Carnegie+Mellon+University&t=h_&ia=web[página de la universidad] en la que se puede llegar a la https://www.cmu.edu/housing/apply-for-housing/index.html[homepage] navegando por ella.
 
 ==== Búsqueda en castellano usando DuckDuckGo 
 
