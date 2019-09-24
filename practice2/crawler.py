@@ -5,64 +5,74 @@ from bs4 import BeautifulSoup
 import urllib.parse
 
 urls = []
-visitedPages = {}
 
 urlFile = sys.argv[1]
 maxFiles = int(sys.argv[2]) 
 waitingTime = int(sys.argv[3])
 
 class Crawler:
-    def __init(self, url, maxFiles, seconds):
+    def __init__(self, url, maxFiles, seconds): 
+        print("Initializing crawler for " + url)
+        self.visitedPages = {}
         self.url = url
         self.maxFiles = maxFiles
         self.seconds = seconds
-        def getUrl(filename):
-            file = open(filename, "r")
-            lines = file.read().splitlines()
-            for line in lines:
-                urls.append(line)
-            file.close()
+        self.html = ""
 
-        def crawl(url, seconds):
-            global maxFiles
-            if url == "":
-                return
-            if url in visitedPages:
-                return
-            else:
-                visitedPages[url] = ""
-            if maxFiles < 1:
-                return
-            else:
-                maxFiles -= 1
-            html = download(url)
-            if html == "":
-                return
-            soup = BeautifulSoup(html, features="html.parser")
-            print("Saving " + url + "...")
-            print("Remaining pages: "+ str(maxFiles))
-            file = open(soup.title.string.replace("/","|")+'.html', 'w+')
-            file.write(html)
-            file.close()
-            #discard all elements except the ones with the <a> tag
-            for link in soup.find_all('a', href = True):
-                #get the href attribute of the html tag
-                l = normalizeLink(url, link["href"])
-                crawl(l, seconds) 
+    def getUrl(filename):
+        file = open(filename, "r")
+        lines = file.read().splitlines()
+        for line in lines:
+            urls.append(line)
+        file.close()
 
-        def normalizeLink(url, link):
-            if link.startswith("/") or link.startswith("#") or link.startswith("../"):
-                return urllib.parse.urljoin(url, link)
-            else:
-                return link
+    def crawl(self): 
+        if not self.isCrawlable():
+            return
+        soup = BeautifulSoup(self.html, features="html.parser")
+        print("Saving " + self.url + "...")
+        print("Remaining pages: "+ str(self.maxFiles))
+        self.writeHtml(soup, self.html)     
+        #discard all elements except the ones with the <a> tag
+        for link in soup.find_all('a', href = True):
+            #get the href attribute of the html tag
+            l = self.normalizeLink(self.url, link["href"])
+            self.url = l
+            self.crawl() 
+    
+    def isCrawlable(self):
+        if self.url == "":
+            return False
+        if self.url in visitedPages:
+            return False
+        if self.maxFiles < 1:
+            return False
+        self.html = self.download(self.url)
+        if self.html == "":
+            return False
+        visitedPages[self.url] = ""
+        self.maxFiles -= 1
+        return True
 
-        def download(url):
-            request = requests.get(url)
-            if "text/html" in request.headers["content-type"]:
-                return request.text
-            else:
-                return ""
+    def writeHtml(self, soup, html):
+        file = open(soup.title.string.replace("/","|")+'.html', 'w+')
+        file.write(html)
+        file.close()
+    
+    def normalizeLink(self, url, link):
+        # In case it is a partial link, make it absolute
+        if link.startswith("/") or link.startswith("#") or link.startswith("../"):
+            return urllib.parse.urljoin(url, link)
+        else:
+            return link
 
+    def download(self, url):
+        request = requests.get(url)
+        # Make sure it is an html        
+        if "text/html" in request.headers["content-type"]:
+            return request.text
+        else:
+            return ""
 
 def getUrl(filename):
     file = open(filename, "r")
@@ -71,47 +81,9 @@ def getUrl(filename):
         urls.append(line)
     file.close()
 
-def crawl(url, seconds):
-    global maxFiles
-    if url == "":
-        return
-    if url in visitedPages:
-        return
-    else:
-        visitedPages[url] = ""
-    if maxFiles < 1:
-        return
-    else:
-        maxFiles -= 1
-    html = download(url)
-    if html == "":
-        return
-    soup = BeautifulSoup(html, features="html.parser")
-    print("Saving " + url + "...")
-    print("Remaining pages: "+ str(maxFiles))
-    file = open(soup.title.string.replace("/","|")+'.html', 'w+')
-    file.write(html)
-    file.close()
-    #discard all elements except the ones with the <a> tag
-    for link in soup.find_all('a', href = True):
-        #get the href attribute of the html tag
-        l = normalizeLink(url, link["href"])
-        crawl(l, seconds) 
-
-def normalizeLink(url, link):
-    if link.startswith("/") or link.startswith("#") or link.startswith("../"):
-        return urllib.parse.urljoin(url, link)
-    else:
-        return link
-
-def download(url):
-    request = requests.get(url)
-    if "text/html" in request.headers["content-type"]:
-        return request.text
-    else:
-        return ""
-
 getUrl(urlFile)
+
 for url in urls:
-    crawl(url, waitingTime)
+    crawler = Crawler(url, maxFiles, waitingTime)
+    crawler.crawl()
     maxFiles = 10
