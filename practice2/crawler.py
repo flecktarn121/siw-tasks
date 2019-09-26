@@ -19,20 +19,14 @@ class Crawler:
         self.seconds = seconds
         self.html = ""
 
-    def getUrl(filename):
-        file = open(filename, "r")
-        lines = file.read().splitlines()
-        for line in lines:
-            urls.append(line)
-        file.close()
-
     def crawl(self): 
         if not self.isCrawlable():
             return
         soup = BeautifulSoup(self.html, features="html.parser")
         print("Saving " + self.url + "...")
         print("Remaining pages: "+ str(self.maxFiles))
-        self.writeHtml(soup, self.html)     
+        self.writeHtml(soup, self.html)
+        time.sleep(waitingTime)
         #discard all elements except the ones with the <a> tag
         for link in soup.find_all('a', href = True):
             #get the href attribute of the html tag
@@ -43,14 +37,14 @@ class Crawler:
     def isCrawlable(self):
         if self.url == "":
             return False
-        if self.url in visitedPages:
+        if self.url in self.visitedPages:
             return False
         if self.maxFiles < 1:
             return False
         self.html = self.download(self.url)
         if self.html == "":
             return False
-        visitedPages[self.url] = ""
+        self.visitedPages[self.url] = ""
         self.maxFiles -= 1
         return True
 
