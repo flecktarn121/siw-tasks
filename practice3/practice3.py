@@ -30,9 +30,8 @@ class BagOfWords:
 
 
 def string_2_bag_of_words(text):
-    text=text.translate(str.maketrans('', '', string.punctuation))  
     # Remove punctuation symbols (or simply just consider alphanumeric ones)
-    tokenizer = RegexpTokenizer(r'\w')
+    text=text.translate(str.maketrans('', '', string.punctuation))  
     tokens = nltk.word_tokenize(text)
     print(tokens)
     # get rid of stop words
