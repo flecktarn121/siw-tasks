@@ -80,4 +80,3 @@ getUrl(urlFile)
 for url in urls:
     crawler = Crawler(url, maxFiles, waitingTime)
     crawler.crawl()
-    maxFiles = 10
