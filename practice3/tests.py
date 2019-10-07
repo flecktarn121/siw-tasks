@@ -11,7 +11,7 @@ from __future__ import division
 import unittest
 
 # MODIFICAR EL NOMBRE DEL PAQUETE
-from compare_v3 import BagOfWords, coef_dice, coef_jaccard, coef_cosine, coef_overlapping
+from practice3 import BagOfWords, coef_dice, coef_jaccard, coef_cosine, coef_overlapping
 
 
 class TestBagOfWords(unittest.TestCase):

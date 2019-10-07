@@ -1,4 +1,4 @@
-import division from __future__
+from __future__ import division
 import string
 import nltk
 nltk.download('wordnet')
@@ -12,23 +12,23 @@ class BagOfWords:
 
     def __init__(self, text="", values={}):
         if text == "":
-            self.bag = values
+            self.values = values
         else:
-            self.bag = string_2_bag_of_words(text)
+            self.values = string_2_bag_of_words(text)
 
 
     def __str__(self):
-        return str(self.bag)
+        return str(self.values)
 
     def __len__(self):
-        return len(self.bag)
+        return len(self.values)
 
     def __iter__(self):
-        return iter(self.bag)
+        return iter(self.values.items())
 
     def intersection(self, other):
-        keys_a = set(self.bag.keys())
-        keys_b = set(other.bag.keys())
+        keys_a = set(self.values.keys())
+        keys_b = set(other.values.keys())
 
         intersection_keys = keys_a & keys_b
 
@@ -36,33 +36,33 @@ class BagOfWords:
         for key in intersection_keys:
             new_bag[key] = 1
 
-        return BagOfWords(new_bag)        
+        return BagOfWords(values=new_bag)        
 
     def union(self, other):
-        new_bag = {**self.bag, **other.bag}
+        new_bag = {**self.values, **other.values}
 
         for key in new_bag.keys():
             new_bag[key] = 0
-            if key in self.bag:
-                new_bag[key] += self.bag[key]
-            if key in other.bag:
-                new_bag[key] += other.bag
+            if key in self.values:
+                new_bag[key] += self.values[key]
+            if key in other.values:
+                new_bag[key] += other.values[key]
 
-        return BagOfWords(new_bag)
+        return BagOfWords(values=new_bag)
 
 class Coefficient:
     def __init__(self, bow_1, bow_2):
         self.bow_1 = bow_1
         self.bow_2 = bow_2
 
-    def calculate():
+    def calculate(self):
         return
 
 class Overlap(Coefficient):
     def __init__(self, bow_1, bow_2):
         super().__init__(bow_1, bow_2)
 
-    def calculate():
+    def calculate(self):
         dividend = len(self.bow_1.intersection(self.bow_2))
         divisor = min(len(self.bow_1), len(self.bow_2))
 
@@ -74,11 +74,11 @@ class Jaccard(Coefficient):
     def __init__(self, bow_1, bow_2):
         super().__init__(bow_1, bow_2)
 
-    def calculate():
+    def calculate(self):
         dividend = len(self.bow_1.intersection(self.bow_2))
         divisor = len(self.bow_1.union(self.bow_2))
 
-        return dividend = divisor
+        return dividend / divisor
 
 
 
@@ -86,17 +86,19 @@ class Cosine(Coefficient):
     def __init__(self, bow_1, bow_2):
         super().__init__(bow_1, bow_2)
 
-    def calculate():
+    def calculate(self):
         dividend = len(self.bow_1.intersection(self.bow_2))
         divisor = len(self.bow_1) * len(self.bow_2)
+
+        return dividend / divisor
         
 
 class Dice(Coefficient):
     def __init__(self, bow_1, bow_2):
         super().__init__(bow_1, bow_2)
 
-    def calculate():
-        dividend = len(self.bow_1.union(self.bow_2))
+    def calculate(self):
+        dividend = len(self.bow_1.intersection(self.bow_2))
         divisor = len(self.bow_1) + len(self.bow_2)
 
         return 2*(dividend / divisor)
@@ -119,5 +121,16 @@ def string_2_bag_of_words(text):
 
     return words
 
-text = "Hello mr pepito! Hello mr Joseph!"
-print(string_2_bag_of_words(text))
+def coef_dice(bow_1, bow_2):
+    return Dice(bow_1, bow_2).calculate()
+
+def coef_jaccard(bow_1, bow_2):
+    return Jaccard(bow_1, bow_2).calculate()
+
+
+def coef_cosine(bow_1, bow_2):
+    return Cosine(bow_1, bow_2).calculate()
+
+
+def coef_overlapping(bow_1, bow_2):
+    return Overlap(bow_1, bow_2).calculate()
