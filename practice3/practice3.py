@@ -8,7 +8,7 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.stem import WordNetLemmatizer
 
 class BagOfWords:
-    
+
     def __init__(self, text="", values={}):
         if text == "":
             self.bag = values
@@ -25,8 +25,29 @@ class BagOfWords:
     def __iter__(sefl):
         return iter(self.bag)
 
+    def intersection(self, other):
+        keys_a = set(self.bag.keys())
+        keys_b = set(other.bag.keys())
 
+        intersection_keys = keys_a & keys_b
 
+        new_bag = {}
+        for key in intersection_keys:
+            new_bag[key] = 1
+
+        return BagOfWords(new_bag)        
+
+    def union(self, other):
+        new_bag = {**self.bag, **other.bag}
+
+        for key in new_bag.keys():
+            new_bag[key] = 0
+            if key in self.bag:
+                new_bag[key] += self.bag[key]
+            if key in other.bag:
+                new_bag[key] += other.bag
+
+        return BagOfWords(new_bag)
 
 
 def string_2_bag_of_words(text):
@@ -44,7 +65,7 @@ def string_2_bag_of_words(text):
                 words[token] = 1
             else:
                 words[token] += 1
-               
+
     return words
 
 text = "Hello mr pepito! Hello mr Joseph!"
