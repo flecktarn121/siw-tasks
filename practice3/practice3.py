@@ -51,18 +51,16 @@ class BagOfWords:
         return BagOfWords(values=new_bag)
 
 class Coefficient:
-    def __init__(self, bow_1, bow_2):
+
+    def calculate(self, bow_1, bow_2):
         self.bow_1 = bow_1
         self.bow_2 = bow_2
 
-    def calculate(self):
-        return
 
 class Overlap(Coefficient):
-    def __init__(self, bow_1, bow_2):
-        super().__init__(bow_1, bow_2)
 
-    def calculate(self):
+    def calculate(self, bow_1, bow_2):
+        super().calculate(bow_1, bow_2)
         dividend = len(self.bow_1.intersection(self.bow_2))
         divisor = min(len(self.bow_1), len(self.bow_2))
 
@@ -71,10 +69,9 @@ class Overlap(Coefficient):
 
 
 class Jaccard(Coefficient):
-    def __init__(self, bow_1, bow_2):
-        super().__init__(bow_1, bow_2)
 
-    def calculate(self):
+    def calculate(self, bow_1, bow_2):
+        super().calculate(bow_1, bow_2)
         dividend = len(self.bow_1.intersection(self.bow_2))
         divisor = len(self.bow_1.union(self.bow_2))
 
@@ -83,21 +80,19 @@ class Jaccard(Coefficient):
 
 
 class Cosine(Coefficient):
-    def __init__(self, bow_1, bow_2):
-        super().__init__(bow_1, bow_2)
 
-    def calculate(self):
+    def calculate(self, bow_1, bow_2):
+        super().calculate(bow_1, bow_2)
         dividend = len(self.bow_1.intersection(self.bow_2))
         divisor = len(self.bow_1) * len(self.bow_2)
 
         return dividend / divisor
-        
+
 
 class Dice(Coefficient):
-    def __init__(self, bow_1, bow_2):
-        super().__init__(bow_1, bow_2)
 
-    def calculate(self):
+    def calculate(self, bow_1, bow_2):
+        super().calculate(bow_1, bow_2)
         dividend = len(self.bow_1.intersection(self.bow_2))
         divisor = len(self.bow_1) + len(self.bow_2)
 
@@ -107,7 +102,6 @@ def string_2_bag_of_words(text):
     # Remove punctuation symbols (or simply just consider alphanumeric ones)
     text=text.translate(str.maketrans('', '', string.punctuation))  
     tokens = nltk.word_tokenize(text)
-    print(tokens)
     # get rid of stop words
     words = {}
     lemmatizer = WordNetLemmatizer()
@@ -121,16 +115,68 @@ def string_2_bag_of_words(text):
 
     return words
 
+def find_best_text(querie, texts, coefficient):
+    bag1 = BagOfWords(values = querie)
+    best_result = 0
+    best_text = 0
+    counter = 0
+
+    for t in texts.values():
+        counter += 1
+        bag2 = BagOfWords(values = t)
+        result = coefficient.calculate(bag1, bag2)
+        if result > best_result:
+            best_result = result
+            best_text = counter
+
+    return best_text
+
+def load_lines(filename):
+    f = open(filename, "r")
+    lines = {}
+    for line in f.readlines():
+        lines[line[5:]]=string_2_bag_of_words(line[5:])
+    f.close()
+    return lines
+
+#===== Auxiliary functions for the unit tests ======
 def coef_dice(bow_1, bow_2):
-    return Dice(bow_1, bow_2).calculate()
+    return Dice().calculate(bow_1, bow_2)
 
 def coef_jaccard(bow_1, bow_2):
-    return Jaccard(bow_1, bow_2).calculate()
+    return Jaccard().calculate(bow_1, bow_2)
 
 
 def coef_cosine(bow_1, bow_2):
-    return Cosine(bow_1, bow_2).calculate()
-
+    return Cosine().calculate(bow_1, bow_2)
 
 def coef_overlapping(bow_1, bow_2):
-    return Overlap(bow_1, bow_2).calculate()
+    return Overlap().calculate(bow_1, bow_2)
+#===================================================
+
+def main():
+    texts =load_lines("cran-1400.txt")
+    queries = load_lines("cran-queries.txt")
+    print("# Queries' results")
+    print("\nThe following results correspond to the texts that may satisfy the queries using a certain coefficient.\n")
+    for querie in queries.keys():
+        print("##"+querie)
+        best_text = find_best_text(queries[querie], texts, Dice())
+
+        print("- Best text with dice coefficient: " + str(best_text))
+        
+        best_text = find_best_text(queries[querie], texts, Jaccard())
+
+        print("- Best text with jaccard coefficient: " + str(best_text))
+
+        best_text = find_best_text(queries[querie], texts, Cosine())
+
+        print("- Best text with cosine coefficient: " + str(best_text))
+
+        best_text = find_best_text(queries[querie], texts, Overlap())
+
+        print("- Best text with overlap coefficient: " + str(best_text))
+
+        print("\n")
+
+main()

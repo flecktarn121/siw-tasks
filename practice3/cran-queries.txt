@@ -122,7 +122,7 @@ I 176	what papers are there dealing with circumferential buckling either thermal
 I 177	what analytical investigations have been made of the stability of conical shells how do the results compare with experiment  
 I 181	has any work been done on determining the nature of compressible viscous flow in a straight channel  
 I 182	in what areas, other than low density wind tunnel flows, is viscous compressible flow in slender channels a problem what analytical investigations have been made of the stability of conical shells how do the results compare with experiment  
-I 183	jet interference with supersonic flow #¿NOMBRE?
+I 183	jet interference with supersonic flow #Â¿NOMBRE?
 I 184	thrust vector control by fluid injection -dash papers  
 I 187	is it possible to obtain a reasonably simple analytical solution to the heat equation for an exponential (in time) heat input  
 I 189	has anyone programmed a pump design method for a high-speed digital computer  
