@@ -1,3 +1,4 @@
+import division from __future__
 import string
 import nltk
 nltk.download('wordnet')
@@ -22,7 +23,7 @@ class BagOfWords:
     def __len__(self):
         return len(self.bag)
 
-    def __iter__(sefl):
+    def __iter__(self):
         return iter(self.bag)
 
     def intersection(self, other):
@@ -49,6 +50,56 @@ class BagOfWords:
 
         return BagOfWords(new_bag)
 
+class Coefficient:
+    def __init__(self, bow_1, bow_2):
+        self.bow_1 = bow_1
+        self.bow_2 = bow_2
+
+    def calculate():
+        return
+
+class Overlap(Coefficient):
+    def __init__(self, bow_1, bow_2):
+        super().__init__(bow_1, bow_2)
+
+    def calculate():
+        dividend = len(self.bow_1.intersection(self.bow_2))
+        divisor = min(len(self.bow_1), len(self.bow_2))
+
+        return dividend / divisor
+
+
+
+class Jaccard(Coefficient):
+    def __init__(self, bow_1, bow_2):
+        super().__init__(bow_1, bow_2)
+
+    def calculate():
+        dividend = len(self.bow_1.intersection(self.bow_2))
+        divisor = len(self.bow_1.union(self.bow_2))
+
+        return dividend = divisor
+
+
+
+class Cosine(Coefficient):
+    def __init__(self, bow_1, bow_2):
+        super().__init__(bow_1, bow_2)
+
+    def calculate():
+        dividend = len(self.bow_1.intersection(self.bow_2))
+        divisor = len(self.bow_1) * len(self.bow_2)
+        
+
+class Dice(Coefficient):
+    def __init__(self, bow_1, bow_2):
+        super().__init__(bow_1, bow_2)
+
+    def calculate():
+        dividend = len(self.bow_1.union(self.bow_2))
+        divisor = len(self.bow_1) + len(self.bow_2)
+
+        return 2*(dividend / divisor)
 
 def string_2_bag_of_words(text):
     # Remove punctuation symbols (or simply just consider alphanumeric ones)
