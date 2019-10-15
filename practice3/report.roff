@@ -1,0 +1,52 @@
+.TL
+Práctica 3 de Sistemas de Información para la Web
+.AU
+Ángel García Menéndez
+.AI
+Universidad de Oviedo
+.SH
+Introducción
+.LP
+El script de python está preparado para realizar el procesamiento de los textos y las consultas proporcionadas empleando los coeficientes exigidos.
+.SH
+Bibliotecas
+.LP
+El script requiere que se tiene instalada la biblioteca 
+.I "nltk" .
+El resto de dependencias de la misma se bajarán automáticamente de ser necesario.
+.SH
+Estructura
+.LP
+Dentro del script hay dos clases importantes:
+.IP \(bu 2
+.I BagOfWords : 
+Representando el conjunto de palabras de un texto, habiéndose tratado el mismo de forma pertinente.
+.IP \(bu 2
+.I Coefficient :
+clase estrategia cuyos hijos implementan los diferentes coeficientes.
+.SH
+Funcionamiento
+.LP
+Invocando la orden de línea de comandos
+.I "python practica3.py"
+aplicaremos el conjunto de consultas `cran-queries` sobre los documentos de la colección `cran-1400`.
+Como output se nos mostrará la consulta en sí, y el número del documento que mejor la satisface de acuerdo a cada coeficiente.
+.SH
+Otras consideraciones
+.LP
+A la hora de convertir las cadenas de texto a vectores de términos se han realizado las siguientes operaciones:
+.IP \(bu 2
+Eliminación de símbolos de puntuación
+.IP \(bu 2
+Tokenización
+.IP \(bu 2
+Conversión a minúsculas
+.IP \(bu 2
+Lematización
+.IP \(bu 2
+Eliminación de palabras vacías
+.LP
+Asimismo, el output del script se ofrece en formato markdown para poder ser redirigido a un archivo para una lectura más cómoda.
+El procesamiento de los textos y su conversión a 
+.I "bags of words"
+se realiza una sola vez en el programa para mayor optimización.
