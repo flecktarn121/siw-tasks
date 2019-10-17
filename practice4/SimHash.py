@@ -19,7 +19,7 @@ def sim_hash(document, restrictiveness):
     for term in terms:
         heappush(heap, md5_hash(str(term)))
     simhash = 0
-    for x in range(0, restrictiveness):
+    for x in range(0, min(len(terms), restrictiveness)):
         if len(heap) <= 0:
             break
         simhash += heappop(heap)
@@ -75,8 +75,12 @@ def get_json(filename):
 
 
 def main():
-    #documents = getDocuments("cran-1400.txt")
-    documents = getJson("2008-Feb-02-04.json.gz")
+    try:
+        documents = get_documents("cran-1400.txt")
+        #documents = get_json("2008-Feb-02-04.json.gz")
+    except:
+        print("There has been a problem reading the documment's file")
+        exit(1)
     counter = 0
     restrictiveness = 8 
     similar_documents = {}
