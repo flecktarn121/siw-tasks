@@ -55,7 +55,7 @@ class InvertedIndex:
                 if word not in self.terms.keys():
                     post_list = {}
                     post_list[doc_id] = words[word]
-                    entry = IndexEntry(word, post_list, 0)
+                    entry = IndexEntry(word, post_list, self.number_of_documents)
                     self.put(word, entry)
                 else:
                     self.update(word, doc_id, words[word])
@@ -95,7 +95,8 @@ class IndexEntry:
         self.post_list[document_id] = tf
 
     def update_idf(self):
-        documents_with_term = len(self.post_list)
+        documents_with_term = len(self.post_list) + 1
+        print(self.number_of_documents / documents_with_term)
         self.idf = math.log10(self.number_of_documents / documents_with_term) 
 
 def read_file(filename):
@@ -108,8 +109,10 @@ def read_file(filename):
         
 def main():
     index = InvertedIndex()
-    documents = read_file("cran-1400.txt")
+    documents = read_file("documents.txt")
     index.initialize(documents)
+    print(index.terms["chine"].post_list)
+    print(index.terms["chine"].get_idf())
 
 if __name__ == "__main__":
     main()

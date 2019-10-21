@@ -1,5 +1,4 @@
 import json
-import argparse
 import gzip
 from heapq import heappush, heappop
 import string
@@ -21,8 +20,8 @@ def sim_hash(document, restrictiveness):
         heappush(heap, md5_hash(str(term)))
     simhash = 0
     for x in range(0, min(len(terms), restrictiveness)):
-        if len(heap) <= 0:
-            break
+        # The min serves to prevent the program from breaking if
+        # restrictiveness is higher than the number of documents.
         simhash += heappop(heap)
     return simhash
 
@@ -77,8 +76,8 @@ def get_json(filename):
 
 def main():
     try:
-        documents = get_documents("cran-1400.txt")
-        #documents = get_json("2008-Feb-02-04.json.gz")
+        #documents = get_documents("cran-1400.txt")
+        documents = get_json("2008-Feb-02-04.json.gz")
     except:
         print("There has been a problem reading the documment's file")
         exit(1)
@@ -92,6 +91,7 @@ def main():
             similar_documents[text_hash] = []
         similar_documents[text_hash].append(document)
 
+    # The results would be ouptuted in markdown format
     print("# Results\n")
     print("The following documents have been found similar according to the _simhash_ system with restrictiveness " + str(restrictiveness) + ".\n")
 
