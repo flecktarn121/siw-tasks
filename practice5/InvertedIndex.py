@@ -19,6 +19,10 @@ class InvertedIndex:
         '''Inserts an index entry according to the given term '''
         self.terms[term] = entry 
 
+    def get_entry(self, term):
+        term_in_index(term)
+        return self.terms[term]
+
     def update(self, term, document_id, tf):
         '''Updates the post-list for the entry of a term'''
         self.terms[term].update_post_list(document_id, tf)
