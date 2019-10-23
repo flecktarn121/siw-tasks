@@ -168,21 +168,3 @@ class IndexEntry:
         documents_with_term = len(self.post_list) + 1
         print(self.number_of_documents / documents_with_term)
         self.idf = math.log10(self.number_of_documents / documents_with_term) 
-
-def read_file(filename):
-    f = open(filename, "r")
-    documents = {}
-    for line in f.readlines():
-        documents[line[:3]] = line[2:]
-    f.close()
-    return documents
-        
-def main():
-    index = InvertedIndex()
-    documents = read_file("documents.txt")
-    index.initialize(documents)
-    print(index.terms["chine"].post_list)
-    print(index.terms["chine"].get_idf())
-
-if __name__ == "__main__":
-    main()
