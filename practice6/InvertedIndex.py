@@ -148,8 +148,8 @@ class IndexEntry:
         '''float: the current idf for a document.'''
         if self.idf == 0:
             self.update_idf()
-        else:
-            return self.idf
+            
+        return self.idf
 
     @property
     def get_post_list(self):
