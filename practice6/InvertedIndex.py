@@ -165,6 +165,5 @@ class IndexEntry:
 
     def update_idf(self):
         # Internal method: update the idf for th entry term
-        documents_with_term = len(self.post_list) + 1
-        print(self.number_of_documents / documents_with_term)
-        self.idf = math.log10(self.number_of_documents / documents_with_term) 
+        documents_with_term = len(self.post_list)
+        self.idf = 1 + math.log10(self.number_of_documents / documents_with_term) 
