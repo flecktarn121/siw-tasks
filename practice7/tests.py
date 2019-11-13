@@ -11,11 +11,11 @@ from __future__ import division
 import unittest
 
 # MODIFICAR EL NOMBRE DEL PAQUETE SI ES NECESARIO
-from common import Graph
+from graph import Graph
 
 
 class TestBagOfWords(unittest.TestCase):
-    
+
     def test_basic(self):
         edges = [
             ["A", "B"],
@@ -39,7 +39,7 @@ class TestBagOfWords(unittest.TestCase):
         scores = g.page_rank(damping=0.85, limit=1.0e-8)
         sorted_nodes = [node for node, _ in sorted(scores.items(), key=lambda x: x[1], reverse=True)]
         self.assertSequenceEqual(sorted_nodes, ["F", "C", "E", "A", "D", "B"])
-    
+
     def test_sink(self):
         edges = [
             ["A", "B"],
@@ -87,7 +87,7 @@ class TestBagOfWords(unittest.TestCase):
         scores = g.page_rank(damping=0.85, limit=1.0e-8)
         sorted_nodes = [node for node, _ in sorted(scores.items(), key=lambda x: x[1], reverse=True)]
         self.assertSequenceEqual(sorted_nodes, ["F", "C", "E", "A", "D", "B"])
-    
+
     def test_source2(self):
         edges = [
             ["A", "B"],
@@ -111,7 +111,7 @@ class TestBagOfWords(unittest.TestCase):
         scores = g.page_rank(damping=0.85, limit=1.0e-8)
         sorted_nodes = [node for node, _ in sorted(scores.items(), key=lambda x: x[1], reverse=True)]
         self.assertSequenceEqual(sorted_nodes, ["C", "A", "B", "D", "E", "F"])
-    
+
     def test_sink2(self):
         edges = [
             ["A", "B"],
@@ -135,7 +135,7 @@ class TestBagOfWords(unittest.TestCase):
         scores = g.page_rank(damping=0.85, limit=1.0e-8)
         sorted_nodes = [node for node, _ in sorted(scores.items(), key=lambda x: x[1], reverse=True)]
         self.assertSequenceEqual(sorted_nodes, ["F", "C", "A", "B", "D", "E"])
-    
+
     def test_sink3(self):
         edges = [
             ["A", "B"],

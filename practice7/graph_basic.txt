@@ -4,7 +4,6 @@ A,F
 B,A
 B,C
 B,D
-C,F
 D,A
 D,C
 D,E

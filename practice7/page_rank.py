@@ -8,7 +8,7 @@ import argparse
 import io
 
 # MODIFICAR EL NOMBRE DEL PAQUETE SI ES NECESARIO
-from common import Graph
+from graph import Graph
 
 
 def main(args):
