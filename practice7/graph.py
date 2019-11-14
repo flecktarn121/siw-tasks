@@ -63,6 +63,7 @@ class Graph:
     def _get_s(self):
         # Returns the stochastic matrix of the adjacency matrix,
         # that is, all-zero rows are subsituted by 1/n*nodes
+
         h = self._normalize(self.adjacency_matrix)
         zeroes = np.where(~h.any(axis=1))[0]
         for row in zeroes:
@@ -71,7 +72,8 @@ class Graph:
 
     def _normalize(self, matrix):
         # Normalize the given matrix
-        row_sums = matrix.sum(axis=1)
+
+        cols = matrix.sum(axis=1)
         # If one of the rows is all 0, they will result in nan
         new_matrix = matrix / row_sums[:, np.newaxis]
         # Substitute nan by 0
@@ -80,6 +82,7 @@ class Graph:
 
     def _get_google_matrix(self, S, damping):
         # Return th google matrix, applying the damping factor
+
         aux = np.full((self.number_of_nodes, self.number_of_nodes), (1 / self.number_of_nodes))
         G = damping * S + (1 - damping) * aux
         return G

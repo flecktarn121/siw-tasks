@@ -24,16 +24,16 @@ Tras pasarla por Open Calais y añadir las entidades y tipos correspondientes el
 \item Alexander S. Vindman: Person(familyName: Vindman, name: Alexander, jobTitle: official, memberOf: GovermentOrganization(United States Army), nationality: Country(United States of America), worksFor: GovermentOrganization(United States Army), knows: Person(Donald Trump))
 \item Joe Biden:Person(familyName: Viden, name: Joe, jobTitle: official, memberOf: GovermentOrganization(United States Army), nationality: Country(United States of America), worksFor: GovermentOrganization(United States Army), knows: Person(Donald Trump), URL: https://www.wikidata.org/wiki/Q6279)
 \item Nancy Pelosi: Person(familyName: Pelosi, name: Nancy, jobTitle: President, memberOf: GovermentOrganization(House of Representatives), nationality: Country(United States of America), worksFor: GovermentOrganization(House of Representatives), knows: Person(Donald Trump), URL: https://www.wikidata.org/wiki/Q170581)
-\item Stephanie Grisham
-\item Trump
-\item Volodymyr Zelensky
-\item Califormia
+\item Stephanie Grisham: Person(familyName: Grisham, name: Stephanie, jobTitle: Press Secretry, memberOf: GovermentOrganization(House of Representatives), nationality: Country(United States of America), worksFor: GovermentOrganization(House of Representatives), knows: Person(Donald Trump), URL: https://www.wikidata.org/wiki/Q30015089)
+\item Trump: Person(familyName: Trump, jobTitle: President, memberOf: GovermentOrganization(Goverment of the United States), nationality: Country(United States of America), worksFor: GovermentOrganization(Goverment of the United States), knows: Person(Volodymyr Zelensky), URL: https://www.wikidata.org/wiki/Q22686)
+\item Volodymyr Zelensky: Person(familyName: Zelensky, jobTitle: President, memberOf: GovermentOrganization(Goverment of the Ukraine), nationality: Country(Ukraine), worksFor: GovermentOrganization(Goverment of the Ukraine), knows: Person(Trump), URL: https://www.wikidata.org/wiki/Q3874799)
+\item Califormia: AdministrativeArea(name: California, URL: https://www.wikidata.org/wiki/Q99)
 \end{itemize}
 
 De forma ideal, todos los elementos debería tener un \textit{itemid}, precisamente para poder explotar el potencial de enlazamiento de datos.
 Por ejemplo, si se puede establecer un identificados común para \textit{Donald Trump} es posible encontrar conceptos o información relacionada con el presidente norteamericano.
 De lo contrario se estaría dependiendo de comparación de cadenas de caracteres, que al margen de cuestiones de optimización y escalabilidad, pueden varias entre idiomas.
-Un claro ejemplo de esto último puede verse en la empresa Бурізма Холдінгз Лімітед, cuyo nombre en alfabeto latino sería \textit{Burisma Holdings Ltd.}
+Un claro ejemplo de esto último puede verse en el nombre del presidente de la República Ucraniana, Volodymyr Zelensky, cuyo nombre en el ucraniano original es
 De no dársele un identificador único, ambos conceptos no tendrían por qué estar relacionados, perdiéndose información por el camino.
 
 Empero, esto produce el siguiente dilema, ¿cuál debería ser el identificador?

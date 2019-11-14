@@ -1,0 +1,28 @@
+.TL
+Práctica 7 de Sistemas de Información para la Web
+.AU
+Ángel García Menéndez
+.AI
+Universidad de Oviedo
+.SH
+Introducción
+.LP
+El código que se provee son tanto los materiales proporcionados por el profesor como el script necesario para realizar el algoritmo
+.I "PageRank" .
+.SH
+Decisiones principales
+.LP
+Al recibir el diccionario de vértices, a estos se les asignan números para poder construir la matriz de adyacencia.
+Una vez hecho esto, queda almacenada en el objeto para poder usarse.
+.LP
+El algoritmo se ejecuta en su forma iterativa, empleando la biblioteca
+.I "numpy"
+de cálculo numérico.
+El
+.I "damping factor"
+y el límite del error cuadrático pueden pasarse como parámetros al método, siendo los valores por defecto 0.85 para el primero y 0,00000001 el segundo.
+.LP
+Por como se ha realizado la implementación, el intérprete produce una advertencia en tiempo de ejecución.
+Al normalizar la matriz, de darse un nodo sumidero, o lo que es lo mismo, aparecer una fila de 0, esa fila será sustituida por
+.I nan .
+Sin embargo, esto se corrige en la línea siguiente, procediendo la ejecución con normalidad.
