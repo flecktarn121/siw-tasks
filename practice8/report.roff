@@ -45,6 +45,9 @@ Person(familyName: Zelensky, jobTitle: President, memberOf: GovermentOrganizatio
 .IP \(bu 2
 .B Califormia :
 AdministrativeArea(name: California, URL: https://www.wikidata.org/wiki/Q99)
+.IP \(bu 2
+.B "US Constitution" :
+Legislation(name: US constitution, legislationJurisdiction: US, legislationType: consitution, URL: https://www.wikidata.org/wiki/Q30)
 .LP
 De forma ideal, todos los elementos debería tener un
 .I itemid ,
@@ -72,6 +75,14 @@ Ante la falta de una estandarización propiamente dicha, siempre queda la opció
 A pesar de todo, y pudiendo alargarse el debate hasta la infinitud, lo mínimo que sí se puede elegir es consistencia: una vez escogido un sistema de referencia, ceñirse al mismo, no acabar generando un
 .I popurrí
 de nula utilidad.
+.LP
+Por su parte, el uso en concreto del sistema de microdatos de HTML5 trae sus propios inconvenientes.
+Por un lado
+.I ensucia
+el código, haciéndolo en ocasiones casi ilegible.
+Por otro lado, la sintaxis es engorrosa, y en ocasiones no se expresa todo lo "semánticamente correcta" que debiera, por tener que adaptarse a las vicisitudes del lenguaje natural del propio texto.
+.LP
+De quererse realizar un marcado semántico riguroso, este sistema, si bien útil en determinados casos, acaba volviéndose eventualmente impracticable, por las razones antes expuestas y puede que otras a medida que el proyecto escala.
 .SH
 Ejercicio 2
 .LP
@@ -81,3 +92,6 @@ pues la herramienta de validación de Google exige una serie de propiedades como
 .I obligatorias ,
 pese a que ningún estándar (ni siquiera la ontología empleada) las describa como tal.
 Por este motivo se ignorarán tales advertencias y se procederá a incluir la información que verdaderamente figura en la página.
+.LP
+A continuación se incluye una captura de pantalla de la herramienta de validación, a la que se ha sometido el JSON incrustado en la cabecera del html.
+.PSPIC microdata.eps
