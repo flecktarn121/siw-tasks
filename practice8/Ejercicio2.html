@@ -6,7 +6,160 @@
     </head>
     <body>
         <header>
-            <script type="application/ld+json" src="./microdata.json"></script>
+            <script type="application/ld+json">
+                {
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "ctag": "http://commontag.org/ns#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dc1": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "gr": "http://purl.org/goodrelations/v1#",
+        "grddl": "http://www.w3.org/2003/g/data-view#",
+        "hcalendar": "http://microformats.org/profile/hcalendar#",
+        "hcard": "http://microformats.org/profile/hcard#",
+        "ical": "http://www.w3.org/2002/12/cal/icaltzd#",
+        "ma": "http://www.w3.org/ns/ma-ont#",
+        "md": "http://www.w3.org/ns/md#",
+        "og": "http://ogp.me/ns#",
+        "org": "http://www.w3.org/ns/org#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "qb": "http://purl.org/linked-data/cube#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfa": "http://www.w3.org/ns/rdfa#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rev": "http://purl.org/stuff/rev#",
+        "rif": "http://www.w3.org/2007/rif#",
+        "rr": "http://www.w3.org/ns/r2rml#",
+        "schema": "http://schema.org/",
+        "sd": "http://www.w3.org/ns/sparql-service-description#",
+        "sioc": "http://rdfs.org/sioc/ns#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "skosxl": "http://www.w3.org/2008/05/skos-xl#",
+        "v": "http://rdf.data-vocabulary.org/#",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "void": "http://rdfs.org/ns/void#",
+        "wdr": "http://www.w3.org/2007/05/powder#",
+        "wdrs": "http://www.w3.org/2007/05/powder-s#",
+        "wdsr": "http://www.w3.org/2007/05/powder-s#",
+        "xhv": "http://www.w3.org/1999/xhtml/vocab#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+        {
+            "@id": "https://doi.org/10.1017/CBO9781316182635",
+            "@type": "schema:Chapter",
+            "schema:isPartOf": {
+                "@id": "urn:isbn:9781107500075"
+            },
+            "schema:name": "Political Opinion"
+        },
+        {
+            "@id": "https://www.computer.org/csdl/magazine/mu",
+            "@type": "schema:Periodical",
+            "schema:name": "IEEE Multimedia"
+        },
+        {
+            "@id":"https://www.computer.org/csdl/magazine/mu/2015/02/mmu2015020010/13rRUyhaIlK",
+            "@type":"schema:ScholarlyArticle",
+            "schema:name":"Social Media, Democracy, and Democratization",
+            "schema:author":"Daniel Gayo-Avello",
+            "schema:isPartOf": {
+                "@id": "https://www.computer.org/csdl/magazine/mu"
+            }
+        },
+        {
+            "@id": "https://www.emerald.com/insight/publication/issn/1066-2243",
+            "@type": "schema:Periodical",
+            "schema:name": "Internet Research"
+        },
+
+        {
+            "@id": "urn:issn:1066-2243",
+            "@type": "schema:ScholarlyArticle",
+            "schema:name": "The power of prediction with social media",
+            "schema:author": "Daniel Gayo-Avello",
+            "schema:datePublished": "2013-10-14",
+            "schema:isPartOf":{
+                "@id":"https://www.emerald.com/insight/publication/issn/1066-2243",
+                "@type": "schema:Periodical"
+            }
+        },
+        {
+            "@id": "https://www.computer.org/csdl/magazines/ic",
+            "@type": "schema:Periodical",
+            "schema:name": "IEEE Internet Computing"
+        },
+        {
+            "@id": "https://cacm.acm.org/",
+            "@type": "schema:Periodical",
+            "schema:name": "Communications of the ACM"
+        },
+        {
+            "@id":"https://doi.org/10.1145/2001269.2001297",
+            "@type":"schema:ScholarlyArticle",
+            "schema:name":"Don't turn social media into another 'Literary Digest' poll",
+            "schema:author":"Daniel Gayo-Avello",
+            "schema:isPartOf": {
+                "@id":"https://cacm.acm.org/"
+            },
+            "schema:publisher": {
+                "@id":"https://www.acm.org/",
+                "@type":"Organization"
+
+            }
+        },
+        {
+            "@id": "http://www.di.uniovi.es/",
+            "@type": "schema:EducationalOrganization",
+            "schema:name": "Department of Computer Science",
+            "schema:parentOrganization": {
+                "@id":"https://www.uniovi.es/"
+            }
+        },
+        {
+            "@id": "http://danigayo.info/",
+            "@type": "schema:Person",
+            "schema:affiliation": {
+                "@id": "http://www.di.uniovi.es/"
+            },
+            "schema:jobTitle": "associate professor",
+            "schema:name": "Daniel Gayo-Avello"
+        },
+        {
+            "@id": "urn:isbn:9781107500075",
+            "@type": "schema:Book",
+            "schema:name": "\"Twitter: A Digital Socioscope\"",
+            "schema:publisher": {
+                "@id":"https://www.cambridge.org/"
+            }
+        },
+        {
+            "@id": "https://www.cambridge.org/",
+            "@type": "schema:EducationalOrganization",
+            "schema:name":"Cambridge University Press"
+        },
+        {
+            "@id": "https://www.uniovi.es/",
+            "@type": "schema:CollegeOrUniversity",
+            "schema:department": {
+                "@id": "http://www.di.uniovi.es/"
+            },
+            "schema:name": "University of Oviedo"
+        },
+        {
+            "@id": "http://danigayo.info/teaching/SIW/ejemplos/microdata.html",
+            "rdfa:usesVocabulary": {
+                "@id": "schema:"
+            }
+        }
+    ]
+}
+            </script>
         </header>
         <main>
             I'm Daniel Gayo-Avello, an associate professor in the Department of Computer Science at the University of Oviedo.

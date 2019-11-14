@@ -99,53 +99,54 @@
                 "@id":"https://cacm.acm.org/"
             },
             "schema:publisher": {
-                "@id":"https://www.acm.org/"
+                "@id":"https://www.acm.org/",
+                "@type":"Organization"
 
             }
         },
-            {
-                "@id": "http://www.di.uniovi.es/",
-                "@type": "schema:EducationalOrganization",
-                "schema:name": "Department of Computer Science",
-                "schema:parentOrganization": {
-                    "@id":"https://www.uniovi.es/"
-                }
-            },
-            {
-                "@id": "http://danigayo.info/",
-                "@type": "schema:Person",
-                "schema:affiliation": {
-                    "@id": "http://www.di.uniovi.es/"
-                },
-                "schema:jobTitle": "associate professor",
-                "schema:name": "Daniel Gayo-Avello"
-            },
-            {
-                "@id": "urn:isbn:9781107500075",
-                "@type": "schema:Book",
-                "schema:name": "\"Twitter: A Digital Socioscope\"",
-                "schema:publisher": {
-                    "@id":"https://www.cambridge.org/"
-                }
-            },
-            {
-                "@id": "https://www.cambridge.org/",
-                "@type": "schema:EducationalOrganization",
-                "schema:name":"Cambridge University Press"
-            },
-            {
-                "@id": "https://www.uniovi.es/",
-                "@type": "schema:CollegeOrUniversity",
-                "schema:department": {
-                    "@id": "http://www.di.uniovi.es/"
-                },
-                "schema:name": "University of Oviedo"
-            },
-            {
-                "@id": "http://danigayo.info/teaching/SIW/ejemplos/microdata.html",
-                "rdfa:usesVocabulary": {
-                    "@id": "schema:"
-                }
+        {
+            "@id": "http://www.di.uniovi.es/",
+            "@type": "schema:EducationalOrganization",
+            "schema:name": "Department of Computer Science",
+            "schema:parentOrganization": {
+                "@id":"https://www.uniovi.es/"
             }
+        },
+        {
+            "@id": "http://danigayo.info/",
+            "@type": "schema:Person",
+            "schema:affiliation": {
+                "@id": "http://www.di.uniovi.es/"
+            },
+            "schema:jobTitle": "associate professor",
+            "schema:name": "Daniel Gayo-Avello"
+        },
+        {
+            "@id": "urn:isbn:9781107500075",
+            "@type": "schema:Book",
+            "schema:name": "\"Twitter: A Digital Socioscope\"",
+            "schema:publisher": {
+                "@id":"https://www.cambridge.org/"
+            }
+        },
+        {
+            "@id": "https://www.cambridge.org/",
+            "@type": "schema:EducationalOrganization",
+            "schema:name":"Cambridge University Press"
+        },
+        {
+            "@id": "https://www.uniovi.es/",
+            "@type": "schema:CollegeOrUniversity",
+            "schema:department": {
+                "@id": "http://www.di.uniovi.es/"
+            },
+            "schema:name": "University of Oviedo"
+        },
+        {
+            "@id": "http://danigayo.info/teaching/SIW/ejemplos/microdata.html",
+            "rdfa:usesVocabulary": {
+                "@id": "schema:"
+            }
+        }
     ]
 }

@@ -1,0 +1,83 @@
+.TL
+Práctica 8 de Sistema de Información para la web
+.AU
+Ángel García Menéndez
+.AI
+Universidad de Oviedo
+.SH
+Ejercicio 1
+.LP
+Se ha escogido la siguiente noticia del medio británico
+.I BBC :
+https://www.bbc.com/news/world-us-canada-50214895
+.LP
+Tras pasarla por Open Calais y añadir las entidades y tipos correspondientes el resultado ha sido el siguiente:
+.IP \(bu 2
+.B Ukraine :
+Country(name: Ukraine, URL: https://www.wikidata.org/wiki/Q212)
+.IP \(bu 2
+.B "United States" :
+Country(name: United States of America, URL: https://www.wikidata.org/wiki/Q30)
+.IP \(bu 2
+.B "United States Army" :
+GovermentOrganization(member: Person(Donald Trump), name:United States Army, URL: https://www.wikidata.org/wiki/Q9212)
+.IP \(bu 2
+.B "White House" :
+GovermentOrganization(name: White House, URL: https://www.wikidata.org/wiki/Q35525)
+.IP \(bu 2
+.B "Alexander S. Vindman" :
+Person(familyName: Vindman, name: Alexander, jobTitle: official, memberOf: GovermentOrganization(United States Army), nationality: Country(United States of America), worksFor: GovermentOrganization(United States Army), knows: Person(Donald Trump))
+.IP \(bu 2
+.B "Joe Biden" :
+Person(familyName: Viden, name: Joe, jobTitle: official, memberOf: GovermentOrganization(United States Army), nationality: Country(United States of America), worksFor: GovermentOrganization(United States Army), knows: Person(Donald Trump), URL: https://www.wikidata.org/wiki/Q6279)
+.IP \(bu 2
+.B "Nancy Pelosi" :
+Person(familyName: Pelosi, name: Nancy, jobTitle: President, memberOf: GovermentOrganization(House of Representatives), nationality: Country(United States of America), worksFor: GovermentOrganization(House of Representatives), knows: Person(Donald Trump), URL: https://www.wikidata.org/wiki/Q170581)
+.IP \(bu 2
+.B "Stephanie Grisham" :
+Person(familyName: Grisham, name: Stephanie, jobTitle: Press Secretry, memberOf: GovermentOrganization(House of Representatives), nationality: Country(United States of America), worksFor: GovermentOrganization(House of Representatives), knows: Person(Donald Trump), URL: https://www.wikidata.org/wiki/Q30015089)
+.IP \(bu 2
+.B "Trump" :
+Person(familyName: Trump, jobTitle: President, memberOf: GovermentOrganization(Goverment of the United States), nationality: Country(United States of America), worksFor: GovermentOrganization(Goverment of the United States), knows: Person(Volodymyr Zelensky), URL: https://www.wikidata.org/wiki/Q22686)
+.IP \(bu 2
+.B "Volodymyr Zelensky" :
+Person(familyName: Zelensky, jobTitle: President, memberOf: GovermentOrganization(Goverment of the Ukraine), nationality: Country(Ukraine), worksFor: GovermentOrganization(Goverment of the Ukraine), knows: Person(Trump), URL: https://www.wikidata.org/wiki/Q3874799)
+.IP \(bu 2
+.B Califormia :
+AdministrativeArea(name: California, URL: https://www.wikidata.org/wiki/Q99)
+.LP
+De forma ideal, todos los elementos debería tener un
+.I itemid ,
+precisamente para poder explotar el potencial de enlazamiento de datos.
+Por ejemplo, si se puede establecer un identificados común para
+.I "Donald Trump"
+es posible encontrar conceptos o información relacionada con el presidente norteamericano.
+De lo contrario se estaría dependiendo de comparación de cadenas de caracteres, que al margen de cuestiones de optimización y escalabilidad, pueden variar entre idiomas.
+Un claro ejemplo de esto último puede verse en el nombre del presidente de la República Ucraniana, Volodymyr Zelensky, cuyo nombre en el ucraniano original se escribe en alfabeto cirílico.
+De no dársele un identificador único, ambos conceptos no tendrían por qué estar relacionados, perdiéndose información por el camino.
+.LP
+Empero, esto produce el siguiente dilema, ¿cuál debería ser el identificador?
+Si bien en lo que atañe a libros o empresas existen identificadores únicos, al tratarse de personas u otras entidades no necesariamente tienen por qué existir.
+En este caso, se ha de recurrir a soluciones alternativas, como pueden ser un recurso que los identifique (la página web personal) o entradas en clasificaciones de amplio uso (como Wikidata).
+Aunque todas estas alternativas pueden estar sujetas a debate, el empleo de los identificadores dados por plataformas como Wikidata resulta práctico por varios motivos:
+.IP \(bu 2
+Uso extendido de dicho modelo.
+.IP \(bu 2
+Los identificadores han sido diseñados para este propósito.
+.LP
+Por dichas razones se procederá al empleo de los mismos.
+.LP
+La cuestión de establecer una norma general puede resultar contenciosa.
+Ante la falta de una estandarización propiamente dicha, siempre queda la opción de recurrir a aquello que más se utilice, por mera y simple conveniencia.
+A pesar de todo, y pudiendo alargarse el debate hasta la infinitud, lo mínimo que sí se puede elegir es consistencia: una vez escogido un sistema de referencia, ceñirse al mismo, no acabar generando un
+.I popurrí
+de nula utilidad.
+.SH
+Ejercicio 2
+.LP
+El segundo ejercicio se ha desarrollado con normalidad, con la salvedad del uso de la etiqueta
+.I "Scholarly Article" ,
+pues la herramienta de validación de Google exige una serie de propiedades como
+.I obligatorias ,
+pese a que ningún estándar (ni siquiera la ontología empleada) las describa como tal.
+Por este motivo se ignorarán tales advertencias y se procederá a incluir la información que verdaderamente figura en la página.
