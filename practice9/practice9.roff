@@ -1,0 +1,97 @@
+.TL
+9ª Práctica de Sistemas de Información para la Web
+.AU
+Ángel García Menéndez
+.AI
+Universidad de Oviedo
+.SH
+Primer Ejercicio
+.LP
+.B "Miles Davis"
+.LP
+Como entidad escogeremos
+.I Person ,
+que si bien resulta generalista, posee las suficientes propiedades para poder ajustarse a nuestras necesidades.
+El conjunto de propiedades escogidas serán:
+.IP \(bu 2
+familyName: Davis
+.IP \(bu 2
+hasOcupation: Occupation: (name: jazz musician)
+.IP \(bu 2
+nationality: Country(name: United States of America)
+.IP \(bu 2
+name: Miles
+.IP \(bu 2
+URL: https://www.wikidata.org/wiki/Q93341
+.LP
+.B "Barack Obama"
+.LP
+De la misma forma, recurriremos a Person para modelar al ex-presidente de EEUU. En este caso las propiedades sería:
+.IP \(bu 2
+familyName: Obama
+.IP \(bu 2
+hasOcupation: Ocupation (name: politician)
+.IP \(bu 2
+jobTitle: president
+.IP \(bu 2
+name: Barack
+.IP \(bu 2
+URL: https://www.wikidata.org/wiki/Q76
+.LP
+.B "European Union"
+.LP
+El caso de la Unión Europea es particular, puesto que (discutiblemente), podría considerarse que entra dentro de la categoría de estado.
+Sin embargo, tomando una aproximación conservadora, la consideraremos como Organization, a falta de un concepto más específico:
+.IP \(bu 2
+name: European Union
+.IP \(bu 2
+URL: https://www.wikidata.org/wiki/Q458
+.LP
+.B "Whashington"
+.LP
+Aunque no se especifica si se trata de la ciudad de Washington o del estado del mismo nombre, asumiremos que se trata de la capital de EEUU.
+Un posible listado de propiedades sería:
+.IP \(bu 2
+name: Washington DC
+.IP \(bu 2
+URL: https://www.wikidata.org/wiki/Q61
+.LP
+.B "cambio euro/dolar"
+.LP
+No existe una entidad que sea _moneda_, aunque sí un tipo de cambio, que es lo que discute en el texto, y por ende se ajusta adecuadamente.
+Las propiedades sería:
+.IP \(bu 2
+currency: EUR
+.IP \(bu 2
+currentExchange: UnitPriceSpecification(price: 1.3, priceCurrecy: USD)
+.IP \(bu 2
+URL: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref
+.IP \(bu 2graph
+.IP \(bu 2usd.en.html
+.LP
+.B "New York Times"
+.LP
+En el caso del NYT, existe la entidad Newspaper para describir periódicos.
+Como conjunto de propiedades:
+.IP \(bu 2
+name: New York Times
+.IP \(bu 2
+URL: https://www.wikidata.org/wiki/Q9684
+.LP
+.B "John McCarthy"
+.LP
+Nuevamente, ante la falta tanto de entidades como de información en sí, se recurre a la entidad Person:
+.IP \(bu 2
+familyName: McCarthy
+.IP \(bu 2
+name: John
+.IP \(bu 2
+URL: https://www.wikidata.org/wiki/Q92739
+.LP
+.B "LISP"
+.LP
+Schema.org ofrece una entidad denominada ComputerLanguage, que además se ejemplifica con el propio LISP.
+.IP \(bu 2
+name: LISP
+.IP \(bu 2
+URL: https://www.wikidata.org/wiki/Q132874

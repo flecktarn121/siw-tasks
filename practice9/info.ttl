@@ -1,0 +1,7 @@
+@prefix schema: <https://schema.org/> .
+@prefix wikidata: <https://wikidata.org/> .
+@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# First text
+wikidata:Q93341 rdf:type schema:Person ;
+

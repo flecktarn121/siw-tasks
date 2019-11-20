@@ -1,0 +1,120 @@
+.TITLE "Práctica 9 de Sistemas de Información para la Web"
+.AUTHOR "Ángel García Menéndez"
+.MISC "Universidad de Oviedo"
+.DOCTYPE DEFAULT
+.COPYSTYLE FINAL
+.PRINTSTYLE TYPESET
+.START
+.HEADING 1 "Obtención de información estructurada"
+.LP
+.HEADING 2 "Miles Davis"
+.LP
+Como entidad escogeremos
+.I Person ,
+que si bien resulta generalista, posee las suficientes propiedades para poder ajustarse a nuestras necesidades.
+El conjunto de propiedades escogidas serán:
+.LIST BULLET
+.ITEM
+familyName: Davis
+.ITEM
+hasOcupation: Occupation: (name: jazz musician)
+.ITEM
+nationality: Country(name: United States of America)
+.ITEM
+name: Miles
+.ITEM
+URL: https://www.wikidata.org/wiki/Q93341
+.LIST END
+.LP
+.HEADING 2 "Barack Obama"
+.LP
+De la misma forma, recurriremos a Person para modelar al ex-presidente de EEUU. En este caso las propiedades sería:
+.LIST BULLET
+.ITEM
+familyName: Obama
+.ITEM
+hasOcupation: Ocupation (name: politician)
+.ITEM
+jobTitle: president
+.ITEM
+name: Barack
+.ITEM
+URL: https://www.wikidata.org/wiki/Q76
+.LIST END
+.LP
+.HEADING 2 "European Union"
+.LP
+El caso de la Unión Europea es particular, puesto que (discutiblemente), podría considerarse que entra dentro de la categoría de estado.
+Sin embargo, tomando una aproximación conservadora, la consideraremos como Organization, a falta de un concepto más específico:
+.LIST BULLET
+.ITEM
+name: European Union
+.ITEM
+URL: https://www.wikidata.org/wiki/Q458
+.LIST END
+.LP
+.HEADING 2 "Whashington"
+.LP
+Aunque no se especifica si se trata de la ciudad de Washington o del estado del mismo nombre, asumiremos que se trata de la capital de EEUU.
+Un posible listado de propiedades sería:
+.LIST BULLET
+.ITEM
+name: Washington DC
+.ITEM
+URL: https://www.wikidata.org/wiki/Q61
+.LIST END
+.LP
+.HEADING 2 "cambio euro/dolar"
+.LP
+No existe una entidad que sea _moneda_, aunque sí un tipo de cambio, que es lo que discute en el texto, y por ende se ajusta adecuadamente.
+Las propiedades sería:
+.LIST BULLET
+.ITEM
+currency: EUR
+.ITEM
+currentExchange: UnitPriceSpecification(price: 1.3, priceCurrecy: USD)
+.ITEM
+URL: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref
+.ITEM
+2graph
+.ITEM
+2usd.en.html
+.LIST END
+.LP
+.HEADING 2 "New York Times"
+.LP
+En el caso del NYT, existe la entidad Newspaper para describir periódicos.
+Como conjunto de propiedades:
+.LIST BULLET
+.ITEM
+name: New York Times
+.ITEM
+URL: https://www.wikidata.org/wiki/Q9684
+.LIST END
+.LP
+.HEADING 2 "John McCarthy"
+.LP
+Nuevamente, ante la falta tanto de entidades como de información en sí, se recurre a la entidad Person:
+.LIST BULLET
+.ITEM
+familyName: McCarthy
+.ITEM
+name: John
+.ITEM
+URL: https://www.wikidata.org/wiki/Q92739
+.LIST END
+.LP
+.HEADING 2 "LISP"
+.LP
+Schema.org ofrece una entidad denominada ComputerLanguage, que además se ejemplifica con el propio LISP.
+.LIST BULLET
+.ITEM
+name: LISP
+.ITEM
+URL: https://www.wikidata.org/wiki/Q132874
+.LIST END
+.HEADING 1 "Modelado RDF"
+.LP
+A continuación se muestra el modelado de la información previamente estructurada a RDF, empelando para ello el leguaje Turtle.
+.CODE
+
