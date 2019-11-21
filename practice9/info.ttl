@@ -4,4 +4,46 @@
 
 # First text
 wikidata:Q93341 rdf:type schema:Person ;
+    schema:familyName "Davis";
+    schema:hasOcupation [
+        rdf:type schema:Ocupation;
+        schema:name "Jazz Musician"
+    ];
+    schema:name "Miles";
+    schema:nationality wikidata:Q30.
+
+# Second text
+wikidata:Q76 rdf:type schema:Person;
+    schema:familyName "Obama";
+    schema:name "Barack";
+    schema:jobTitle "President";
+    schema:hasOcupation [
+        rdf:type schema:Ocupation;
+        schema:name "Politician"
+    ].
+
+wikidata:Q458 rdf:type schema:Organization;
+    schema:name "European Union".
+
+wikidata:Q61 rdf:type schema:City;
+    schema:name "Washington DC".
+
+<https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html> rdf:type schema:ExchangeRateSpecification;
+    schema:currency "EUR";
+    schema:currentExchange [
+        rdf:type schema:UnitPriceSpecification;
+        schema:price 1.3;
+        schema:priceCurrency: "USD"
+    ].
+
+# Third text
+wikidata:Q9684 rdf:type schema:Newspaper;
+    schema:name "New York Times".
+
+wikidata:Q92739 rdf:type schema:Person;
+    schema:name "John";
+    schema:familyName "McCarthy".
+
+wikidata:Q132864 rdf:type schema:ComputerLanguage;
+    schema:name "LISP".
 

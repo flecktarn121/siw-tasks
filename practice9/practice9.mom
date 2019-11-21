@@ -6,12 +6,10 @@
 .PRINTSTYLE TYPESET
 .START
 .HEADING 1 "Obtención de información estructurada"
-.LP
-.HEADING 2 "Miles Davis"
-.LP
-Como entidad escogeremos
-.I Person ,
-que si bien resulta generalista, posee las suficientes propiedades para poder ajustarse a nuestras necesidades.
+.PP
+A continuación se ofrecen tanto el listado de entidades identificadas en los textos como sus tipos y propiedades dentro de los ofrecidos por \*[IT]schema.org\*[PREV].
+.PP
+\*[BD]Miles Davis\*[PREV]: Como entidad escogeremos \*[CODE]Person\*[CODE OFF] que si bien resulta generalista, posee las suficientes propiedades para poder ajustarse a nuestras necesidades.
 El conjunto de propiedades escogidas serán:
 .LIST BULLET
 .ITEM
@@ -25,10 +23,8 @@ name: Miles
 .ITEM
 URL: https://www.wikidata.org/wiki/Q93341
 .LIST END
-.LP
-.HEADING 2 "Barack Obama"
-.LP
-De la misma forma, recurriremos a Person para modelar al ex-presidente de EEUU. En este caso las propiedades sería:
+.PP
+\*[BD]Barack Obama\*[PREV]: De la misma forma, recurriremos a Person para modelar al ex-presidente de EEUU. En este caso las propiedades sería:
 .LIST BULLET
 .ITEM
 familyName: Obama
@@ -41,10 +37,8 @@ name: Barack
 .ITEM
 URL: https://www.wikidata.org/wiki/Q76
 .LIST END
-.LP
-.HEADING 2 "European Union"
-.LP
-El caso de la Unión Europea es particular, puesto que (discutiblemente), podría considerarse que entra dentro de la categoría de estado.
+.PP
+\*[BD]European Union\*[PREV]: El caso de la Unión Europea es particular, puesto que (discutiblemente), podría considerarse que entra dentro de la categoría de estado.
 Sin embargo, tomando una aproximación conservadora, la consideraremos como Organization, a falta de un concepto más específico:
 .LIST BULLET
 .ITEM
@@ -52,10 +46,8 @@ name: European Union
 .ITEM
 URL: https://www.wikidata.org/wiki/Q458
 .LIST END
-.LP
-.HEADING 2 "Whashington"
-.LP
-Aunque no se especifica si se trata de la ciudad de Washington o del estado del mismo nombre, asumiremos que se trata de la capital de EEUU.
+.PP
+\*[BD]Whashington\*[PREV]: Aunque no se especifica si se trata de la ciudad de Washington o del estado del mismo nombre, asumiremos que se trata de la capital de EEUU.
 Un posible listado de propiedades sería:
 .LIST BULLET
 .ITEM
@@ -63,10 +55,8 @@ name: Washington DC
 .ITEM
 URL: https://www.wikidata.org/wiki/Q61
 .LIST END
-.LP
-.HEADING 2 "cambio euro/dolar"
-.LP
-No existe una entidad que sea _moneda_, aunque sí un tipo de cambio, que es lo que discute en el texto, y por ende se ajusta adecuadamente.
+.PP
+\*[BD]cambio euro/dolar\*[PREV]: No existe una entidad que sea _moneda_, aunque sí un tipo de cambio, que es lo que discute en el texto, y por ende se ajusta adecuadamente.
 Las propiedades sería:
 .LIST BULLET
 .ITEM
@@ -74,16 +64,10 @@ currency: EUR
 .ITEM
 currentExchange: UnitPriceSpecification(price: 1.3, priceCurrecy: USD)
 .ITEM
-URL: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref
-.ITEM
-2graph
-.ITEM
-2usd.en.html
+URL: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html
 .LIST END
-.LP
-.HEADING 2 "New York Times"
-.LP
-En el caso del NYT, existe la entidad Newspaper para describir periódicos.
+.PP
+\*[BD]New York Times\*[PREV]: En el caso del NYT, existe la entidad Newspaper para describir periódicos.
 Como conjunto de propiedades:
 .LIST BULLET
 .ITEM
@@ -91,10 +75,8 @@ name: New York Times
 .ITEM
 URL: https://www.wikidata.org/wiki/Q9684
 .LIST END
-.LP
-.HEADING 2 "John McCarthy"
-.LP
-Nuevamente, ante la falta tanto de entidades como de información en sí, se recurre a la entidad Person:
+.PP
+\*[BD]John McCarthy\*[PREV]: Nuevamente, ante la falta tanto de entidades como de información en sí, se recurre a la entidad Person:
 .LIST BULLET
 .ITEM
 familyName: McCarthy
@@ -103,18 +85,141 @@ name: John
 .ITEM
 URL: https://www.wikidata.org/wiki/Q92739
 .LIST END
-.LP
-.HEADING 2 "LISP"
-.LP
-Schema.org ofrece una entidad denominada ComputerLanguage, que además se ejemplifica con el propio LISP.
+.PP
+\*[BD]LISP\*[PREV]: Schema.org ofrece una entidad denominada ComputerLanguage, que además se ejemplifica con el propio LISP.
 .LIST BULLET
 .ITEM
 name: LISP
 .ITEM
 URL: https://www.wikidata.org/wiki/Q132874
 .LIST END
-.HEADING 1 "Modelado RDF"
-.LP
+.HEADING 2 "Modelado RDF"
+.PP
 A continuación se muestra el modelado de la información previamente estructurada a RDF, empelando para ello el leguaje Turtle.
-.CODE
+.CODE BR
 
+@prefix schema: <https://schema.org/> .
+
+@prefix wikidata: <https://wikidata.org/> .
+
+@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# First text
+wikidata:Q93341 rdf:type schema:Person ;
+    schema:familyName "Davis";
+    schema:hasOcupation [
+        rdf:type schema:Ocupation;
+        schema:name "Jazz Musician"
+    ];
+    schema:name "Miles";
+    schema:nationality wikidata:Q30.
+
+# Second text
+wikidata:Q76 rdf:type schema:Person;
+    schema:familyName "Obama";
+    schema:name "Barack";
+    schema:jobTitle "President";
+    schema:hasOcupation [
+        rdf:type schema:Ocupation;
+        schema:name "Politician"
+    ].
+
+wikidata:Q458 rdf:type schema:Organization;
+    schema:name "European Union".
+
+wikidata:Q61 rdf:type schema:City;
+    schema:name "Washington DC".
+
+<https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html> rdf:type schema:ExchangeRateSpecification;
+    schema:currency "EUR";
+    schema:currentExchange [
+        rdf:type schema:UnitPriceSpecification;
+        schema:price 1.3;
+        schema:priceCurrency: "USD"
+    ].
+
+# Third text
+wikidata:Q9684 rdf:type schema:Newspaper;
+    schema:name "New York Times".
+
+wikidata:Q92739 rdf:type schema:Person;
+    schema:name "John";
+    schema:familyName "McCarthy".
+
+wikidata:Q132864 rdf:type schema:ComputerLanguage;
+    schema:name "LISP".
+
+.CODE OFF
+.PP
+Comprobamos con la herramienta \*[IT]RDFShape\*[PREV] que la sintaxis es correcta, y con su conversión a JSON-LD lo sometemos a la herramienta datos estructurados de Google para confirmar que, efectivamente, la información puede extraerse correctamente.
+.PDF_IMAGE -C google.pdf 925p 600p SCALE 55
+.HEADING 1 "Obtención automática de información estructurada"
+.PP
+Los tres textos han sido sometidos a análisis automatizado con las tres  herramientas propuestas.
+Dichos análisis han sido convertidos a RDF-XML, Turtle y JSON-LD.
+Con objeto de amenizar el presente escrito, estos se proporcionan como ficheros separados, clasificados por texto. Los nombres son autoexplicativos.
+.PP
+Señalar lo tedioso de la tarea, pues ninguna de las herramientas permitían descargar el RDF en forma de fichero, o al menos un botón de \*[IT]copiar al portapapeles\*[PREV].
+Ademaś, el traductor de sintaxis RDF requería de el borrado manual del contenido previo para realizar una neuva conversión.
+.HEADING 2 "Sobre el uso de ontologías"
+.PP
+Cada sistema emplea su propio conjunto de ontologías para el tipado.
+.PP
+Por un lado, \*[BD]OpenCalais\*[PREV] hace uso casi de forma exclusiva de su propia ontología.
+Esto resulta de especial notoriedad cuando se examina los datos extra que es capaz de proporcionar en realción al texto, así como para representar la estrucutra del propio texto.
+.PP
+Por su parte, \*[BD]FRED\*[PREV] emplea un abanico más amplio de ontologías.
+Por ejemplo, están presentes \*[IT]The DOLCE+DnS Ultralite ontology (dul)\*[PREV] o \*[IT]Boxer\*[PREV], amén de otros recursos de diversa índole para poder ofrecer sus servicio.
+.PP
+Finalmente, \*[BD]DBpedia Spotlight\*[PREV]...
+.HEADING 2 "Concordancias entre ontologías"
+.PP
+Como es de esperar, hay entidades y propiedades comunes entre las onotologías.
+A continuación se enumeran y explican las encontradas en este caso:
+.LIST BULLET
+.ITEM
+\*[CODE]Person\*[CODE OFF]: entidad presente en las 3, pues es prácticamente fundamental en el lenguaje humano.
+.ITEM
+\*[CODE]Position\*[CODE OFF]: parte de la ontología de OpenCalais, puede considerarse equivalente a \*[CODE]Ocupation\*[CODE OFF], pues ambas denotan profesiones.
+.ITEM
+\*[CODE]Organization\*[CODE OFF]: similar, por no decir exactamente igual, a la de schema.org.
+.ITEM
+\*[CODE]CIty\*[CODE OFF]: de nuevo, casi indistinguible de la entidad de schema.org.
+.ITEM
+\*[CODE]Leader\*[CODE OFF]: propia de la ontología de FRED, pudiendo ser equivalente a la propiedad \*[CODE]jobTitle\*[CODE OFF] de \*[CODE]Person\*[CODE OFF] con el valor "Leader".
+.ITEM
+\*[CODE]Huddle\*[CODE OFF]: propia de FRED, sin equivalencia en schema.
+.ITEM
+\*[CODE]Fear\*[CODE OFF]: propia de FRED, sin equivalencia en schema.
+.ITEM
+\*[CODE]Grow\*[CODE OFF]: propia de FRED, sin equivalencia en schema.
+.ITEM
+\*[CODE]Future\*[CODE OFF]: propia de FRED, sin equivalencia en schema.
+.ITEM
+\*[CODE]Euro\*[CODE OFF]/\*[CODE]Dollar\*[CODE OFF]: no existen en schema, pero puede realizarse como se vio previamente en el ejercicio anterior.
+.ITEM
+\*[CODE]Published Medium\*[CODE OFF]: propia de OpenCalais, aunque existen varias equivalentes en schema.
+.ITEM
+\*[CODE]Programming Language\*[CODE OFF]: casi igual a \*[CODE]ComputerLanguage\*[CODE OFF].
+.ITEM
+\*[CODE]Report\*[CODE OFF]: presente de forma exactamente igual en schema.
+.ITEM
+\*[CODE]Invent\*[CODE OFF]: propia de FRED, sin equivalente en schema.
+.LIST END
+.PP
+Empleando sameAs.org se pueden confirmar la mayoría de equivalencias que se han señalado, con la salvedad de las propias de FRED, las cuales parecen ser muy específicas.
+.HEADING 2 "Sobre el uso de ontologías propias"
+.PP
+De forma instintiva, se podría pensar que el mejor curso de acción para con las ontologías sería el tratar de unviersalizarlas en la medida de lo posible.
+Pudiera concevirse incluso la creación de una suerte de \*[IT]ontología universal\*[PREV], que se pudiese emplear en cualquier rama de conocimiento.
+En el momento en que se aborda desde un punto de vista realista los problemas empiezan a surgir.
+.PP
+Como ocurriese con otros aspectos de la Recuperación de Información cuando se aplicaron a Internet, el uso de ontologías se ve lastrado por la naturaleza heterogénea de la web.
+Existen innumerables cantidad de textos, de incontables temáticas y campos, y por tanto las ontologías generalistas palidecen por sus propias limitaciones.
+Esto unido a la creencia general de los grupos humanos de ser portadores de la verdad universal, acaba derivando en que cada herramienta y servicio opten por crear su propio conjunto ontológico que consideren que verdaderamente se ajusta a sus necesidades concretas.
+.PP
+Existe sin embargo otra cara de la moneda, pues en un mundo interconectado, más en la informática, y más en la web, la universalización, auqnue esta sólo sea hasta un cierto punto, acaba volviéndose una necesidad para garantizar la longevidad de los proyectos.
+Más aún en un campo como la Web Semántica, cuyo principal atractivo era, y supuestamente sigue siendo después de cuantiosas reinterpretaciones, el enlace de conceptos en pos de la creación de un posible grafo de conocimiento.
+.PP
+EL proceso de alineación de ontologías no está exento de dificultades, pues en general involucra relacionar términos y conceptos a niveles diferentes, y atendiendo a criterios muy diversos.
+En cualquier caso, se trata en una labor necesaria, e incluso fundamental, cuando se trata con ontologías, especialmente en los entornos digitales, y debe ser tratado en consecuencia.
