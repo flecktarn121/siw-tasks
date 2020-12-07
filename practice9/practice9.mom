@@ -4,12 +4,14 @@
 .DOCTYPE DEFAULT
 .COPYSTYLE FINAL
 .PRINTSTYLE TYPESET
+.COVER TITLE AUTHOR MISC
 .START
 .HEADING 1 "Obtención de información estructurada"
 .PP
 A continuación se ofrecen tanto el listado de entidades identificadas en los textos como sus tipos y propiedades dentro de los ofrecidos por \*[IT]schema.org\*[PREV].
+.HEADING 2 "Miles Davis"
 .PP
-\*[BD]Miles Davis\*[PREV]: Como entidad escogeremos \*[CODE]Person\*[CODE OFF] que si bien resulta generalista, posee las suficientes propiedades para poder ajustarse a nuestras necesidades.
+Como entidad escogeremos \*[CODE]Person\*[CODE OFF] que si bien resulta generalista, posee las suficientes propiedades para poder ajustarse a nuestras necesidades.
 El conjunto de propiedades escogidas serán:
 .LIST BULLET
 .ITEM
@@ -23,8 +25,9 @@ name: Miles
 .ITEM
 URL: https://www.wikidata.org/wiki/Q93341
 .LIST END
+.HEADING 2 "Barack Obama"
 .PP
-\*[BD]Barack Obama\*[PREV]: De la misma forma, recurriremos a Person para modelar al ex-presidente de EEUU. En este caso las propiedades sería:
+De la misma forma, recurriremos a \*[CODE]Person\*[CODE OFF] para modelar al ex-presidente de EEUU. En este caso las propiedades sería:
 .LIST BULLET
 .ITEM
 familyName: Obama
@@ -37,17 +40,19 @@ name: Barack
 .ITEM
 URL: https://www.wikidata.org/wiki/Q76
 .LIST END
+.HEADING 2 "European Union"
 .PP
-\*[BD]European Union\*[PREV]: El caso de la Unión Europea es particular, puesto que (discutiblemente), podría considerarse que entra dentro de la categoría de estado.
-Sin embargo, tomando una aproximación conservadora, la consideraremos como Organization, a falta de un concepto más específico:
+El caso de la Unión Europea es particular, puesto que (discutiblemente), podría considerarse que entra dentro de la categoría de estado.
+Sin embargo, tomando una aproximación conservadora, la consideraremos como \*[CODE]Organization\*[CODE OFF], a falta de un concepto más específico:
 .LIST BULLET
 .ITEM
 name: European Union
 .ITEM
 URL: https://www.wikidata.org/wiki/Q458
 .LIST END
+.HEADING 2 "Whashington"
 .PP
-\*[BD]Whashington\*[PREV]: Aunque no se especifica si se trata de la ciudad de Washington o del estado del mismo nombre, asumiremos que se trata de la capital de EEUU.
+Aunque no se especifica si se trata de la ciudad de Washington o del estado del mismo nombre, asumiremos que se trata de la capital de EEUU, y por ende haremos uso de \*[CODE]City\*[CODE OFF] .
 Un posible listado de propiedades sería:
 .LIST BULLET
 .ITEM
@@ -55,8 +60,9 @@ name: Washington DC
 .ITEM
 URL: https://www.wikidata.org/wiki/Q61
 .LIST END
+.HEADING 2 "cambio euro/dolar"
 .PP
-\*[BD]cambio euro/dolar\*[PREV]: No existe una entidad que sea _moneda_, aunque sí un tipo de cambio, que es lo que discute en el texto, y por ende se ajusta adecuadamente.
+No existe una entidad que sea \*[IT]moneda\*[PREV], aunque sí un tipo de cambio, \*[CODE]ExchangeRateSpecification\*[CODE OFF], que es lo que discute en el texto, y por ende se ajusta adecuadamente.
 Las propiedades sería:
 .LIST BULLET
 .ITEM
@@ -66,8 +72,9 @@ currentExchange: UnitPriceSpecification(price: 1.3, priceCurrecy: USD)
 .ITEM
 URL: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html
 .LIST END
+.HEADING 2 "New York Times"
 .PP
-\*[BD]New York Times\*[PREV]: En el caso del NYT, existe la entidad Newspaper para describir periódicos.
+En el caso del NYT, existe la entidad \*[CODE]Newspaper\*[CODE OFF] para describir periódicos.
 Como conjunto de propiedades:
 .LIST BULLET
 .ITEM
@@ -75,8 +82,9 @@ name: New York Times
 .ITEM
 URL: https://www.wikidata.org/wiki/Q9684
 .LIST END
+.HEADING 2 "John McCarthy"
 .PP
-\*[BD]John McCarthy\*[PREV]: Nuevamente, ante la falta tanto de entidades como de información en sí, se recurre a la entidad Person:
+Nuevamente, ante la falta tanto de entidades como de información en sí, se recurre a la entidad \*[CODE]Person\*[CODE OFF]:
 .LIST BULLET
 .ITEM
 familyName: McCarthy
@@ -85,17 +93,18 @@ name: John
 .ITEM
 URL: https://www.wikidata.org/wiki/Q92739
 .LIST END
+.HEADING 2 "LISP"
 .PP
-\*[BD]LISP\*[PREV]: Schema.org ofrece una entidad denominada ComputerLanguage, que además se ejemplifica con el propio LISP.
+Schema.org ofrece una entidad denominada \*[CODE]ComputerLanguage\*[CODE OFF], que además se ejemplifica con el propio LISP.
 .LIST BULLET
 .ITEM
 name: LISP
 .ITEM
 URL: https://www.wikidata.org/wiki/Q132874
 .LIST END
-.HEADING 2 "Modelado RDF"
+.HEADING 1 "Modelado RDF"
 .PP
-A continuación se muestra el modelado de la información previamente estructurada a RDF, empelando para ello el leguaje Turtle.
+A continuación se muestra el modelado de la información previamente estructurada a RDF, empelando para ello el lenguaje Turtle.
 .CODE BR
 
 @prefix schema: <https://schema.org/> .
@@ -160,7 +169,7 @@ Dichos análisis han sido convertidos a RDF-XML, Turtle y JSON-LD.
 Con objeto de amenizar el presente escrito, estos se proporcionan como ficheros separados, clasificados por texto. Los nombres son autoexplicativos.
 .PP
 Señalar lo tedioso de la tarea, pues ninguna de las herramientas permitían descargar el RDF en forma de fichero, o al menos un botón de \*[IT]copiar al portapapeles\*[PREV].
-Ademaś, el traductor de sintaxis RDF requería de el borrado manual del contenido previo para realizar una neuva conversión.
+Además, el traductor de sintaxis RDF requería de el borrado manual del contenido previo para realizar una nueva conversión.
 .HEADING 2 "Sobre el uso de ontologías"
 .PP
 Cada sistema emplea su propio conjunto de ontologías para el tipado.
@@ -168,10 +177,10 @@ Cada sistema emplea su propio conjunto de ontologías para el tipado.
 Por un lado, \*[BD]OpenCalais\*[PREV] hace uso casi de forma exclusiva de su propia ontología.
 Esto resulta de especial notoriedad cuando se examina los datos extra que es capaz de proporcionar en realción al texto, así como para representar la estrucutra del propio texto.
 .PP
-Por su parte, \*[BD]FRED\*[PREV] emplea un abanico más amplio de ontologías.
+Por su parte, \*[BD]FRED\*[PREV] emplea, aparte de la suya propia, un abanico más amplio de ontologías.
 Por ejemplo, están presentes \*[IT]The DOLCE+DnS Ultralite ontology (dul)\*[PREV] o \*[IT]Boxer\*[PREV], amén de otros recursos de diversa índole para poder ofrecer sus servicio.
 .PP
-Finalmente, \*[BD]DBpedia Spotlight\*[PREV]...
+Finalmente, \*[BD]DBpedia Spotlight\*[PREV] hace uso de su propia ontología, la cual está basada en la información semántica extraída de la Wikipedia.
 .HEADING 2 "Concordancias entre ontologías"
 .PP
 Como es de esperar, hay entidades y propiedades comunes entre las onotologías.
@@ -184,7 +193,7 @@ A continuación se enumeran y explican las encontradas en este caso:
 .ITEM
 \*[CODE]Organization\*[CODE OFF]: similar, por no decir exactamente igual, a la de schema.org.
 .ITEM
-\*[CODE]CIty\*[CODE OFF]: de nuevo, casi indistinguible de la entidad de schema.org.
+\*[CODE]City\*[CODE OFF]: de nuevo, casi indistinguible de la entidad de schema.org.
 .ITEM
 \*[CODE]Leader\*[CODE OFF]: propia de la ontología de FRED, pudiendo ser equivalente a la propiedad \*[CODE]jobTitle\*[CODE OFF] de \*[CODE]Person\*[CODE OFF] con el valor "Leader".
 .ITEM
@@ -205,20 +214,35 @@ A continuación se enumeran y explican las encontradas en este caso:
 \*[CODE]Report\*[CODE OFF]: presente de forma exactamente igual en schema.
 .ITEM
 \*[CODE]Invent\*[CODE OFF]: propia de FRED, sin equivalente en schema.
+.ITEM
+\*[CODE]topical concept\*[CODE OFF]: propia de DBpedia
+.ITEM
+\*[CODE]populated place\*[CODE OFF]: propia de DBpedia, aunque equivalente a \*[CODE]Place\*[CODE OFF] de schema con algo más de especificidad.
+.ITEM
+\*[CODE]scientist\*[CODE OFF]: propia de DBpedia, equivalente a \*[CODE]Occupation\*[CODE OFF] de schema con el nombre acorde.
+.ITEM
+\*[CODE]Newspaper\*[CODE OFF]: presente con el mismo nombre y características que en schema.
 .LIST END
 .PP
-Empleando sameAs.org se pueden confirmar la mayoría de equivalencias que se han señalado, con la salvedad de las propias de FRED, las cuales parecen ser muy específicas.
+Empleando \*[IT]sameAs.org\*[PREV] se pueden confirmar la mayoría de equivalencias que se han señalado, con la salvedad de las propias de FRED, las cuales parecen ser muy específicas.
+.PP
+Todas las herramientas han cumplido su propósito de forma correcta.
+OpenCalais se sienta como la más madura, tanto en términos de interfaz como en lo acertado de su etiquetado, aunque la representación en RDF resulta excesivamente verbosa.
+FRED se queda algo atrás, aunque la presentación en diagrama resulta útil como alternativa a manejar diferentes sintaxis RDF.
+El uso que hace de sus ontologías es, al menos aparentemente, el más complejo, aunque la necesidad de que lo sea puede estar en entredicho.
+Finalmente, DBpedia Spotligth, si bien cumple, se siente bastante menos refinada que las otras dos.
+No sólo en el apartado de la usabilidad, sino incluso en la forma en que etiqueta, y el hecho de que no permite exportar la información a ningún tipo de formato estándar es una gran lacra para el servicio.
 .HEADING 2 "Sobre el uso de ontologías propias"
 .PP
-De forma instintiva, se podría pensar que el mejor curso de acción para con las ontologías sería el tratar de unviersalizarlas en la medida de lo posible.
-Pudiera concevirse incluso la creación de una suerte de \*[IT]ontología universal\*[PREV], que se pudiese emplear en cualquier rama de conocimiento.
+De forma instintiva, se podría pensar que el mejor curso de acción para con las ontologías sería el tratar de universalizarlas en la medida de lo posible.
+Pudiera concebirse incluso la creación de una suerte de \*[IT]ontología universal\*[PREV], que se pudiese emplear en cualquier rama de conocimiento.
 En el momento en que se aborda desde un punto de vista realista los problemas empiezan a surgir.
 .PP
 Como ocurriese con otros aspectos de la Recuperación de Información cuando se aplicaron a Internet, el uso de ontologías se ve lastrado por la naturaleza heterogénea de la web.
 Existen innumerables cantidad de textos, de incontables temáticas y campos, y por tanto las ontologías generalistas palidecen por sus propias limitaciones.
 Esto unido a la creencia general de los grupos humanos de ser portadores de la verdad universal, acaba derivando en que cada herramienta y servicio opten por crear su propio conjunto ontológico que consideren que verdaderamente se ajusta a sus necesidades concretas.
 .PP
-Existe sin embargo otra cara de la moneda, pues en un mundo interconectado, más en la informática, y más en la web, la universalización, auqnue esta sólo sea hasta un cierto punto, acaba volviéndose una necesidad para garantizar la longevidad de los proyectos.
+Existe sin embargo otra cara de la moneda, pues en un mundo interconectado, más en la informática, y más en la web, la universalización, aunque esta sólo sea hasta un cierto punto, acaba volviéndose una necesidad para garantizar la longevidad de los proyectos.
 Más aún en un campo como la Web Semántica, cuyo principal atractivo era, y supuestamente sigue siendo después de cuantiosas reinterpretaciones, el enlace de conceptos en pos de la creación de un posible grafo de conocimiento.
 .PP
 EL proceso de alineación de ontologías no está exento de dificultades, pues en general involucra relacionar términos y conceptos a niveles diferentes, y atendiendo a criterios muy diversos.

@@ -43,3 +43,23 @@ Así, es posible conseguir un valor numérico (el compuesto) que nos de una idea
 Finalmente, se experimentará con diferentes técnicas y parámetros hasta encontrar una que de una respuesta aceptable.
 .SH
 Resultados
+.LP
+Los resultados experimentales han resultado bastante mediocres, pues apenas superan el 51%, o lo que es lo mismo, tiene una ligera mejoría con respecto a la total aleatoriedad.
+Además, tampoco se obtienen resultados tan malos como para poder recurrir a la negación del resultado del clasificador.
+Está en el punto en el que se puede decir que, simplemente, funciona mal.
+Las razones para esto pueden ser diversas, y es de interés el explorarlas.
+.LH
+En primer lugar, habría que tener en cuenta la naturaleza del conjunto de datos.
+Si bien es verdad que los devenires munidales tienen un innegable impacto en el comportamiento del mundo bursátil, la naturaleza de este es compleja, y en determinados casos podría verse hasta arbitraria.
+La cantidad de factores que se pueden considerar, así como la forma en que responde el mercado a estos es un campo de estudio en sí mismo, y por ende la relación entre las noticias más destacadas y las variaciones del
+.I "Down Jones"
+puede no ser tan directa como instintivamente pudiera creerse.
+.LP
+En segundo lugar, los sentimientos que transmiten las noticias no son tan claros y marcados como podría pensarse.
+Existe una tendencia en la prensa a resaltar lo negativo, y por tanto la tónica general es pesimista tanto en días de subida del índice como de bajada.
+Y también se puede apreciar en la gráfica que se genera en Orange que la distribución de los puntos no está muy bien diferenciada, es muy dispersa y no se aprecian concentraciones excesivamente evidentes.
+Por tanto se puede concluir que al no haber una distribución clara el algoritmo de clasificación no tiene matices claros con los que trabajar, de ahí el paupérrimo desempeño.
+.LP
+Finalmente, a modo de reflexión, una alternativa a la ejecución de este experimento pudiera ser un cambio en el conjunto de datos.
+La idea seguiría siendo la misma, sólo que en vez de emplear las noticias generales, se podría hacer uso de las publicadas en r/Economics, pues este subreddit está dedicado por entero a noticias de caracter económico, y generalmente pertenecen a medios norteamericanos, como el índice a analizar.
+Es entonces plausible que exista una relación más directa entre noticias y variociones, aunque casi con seguridad habría que descartar la idea del empleo de sentimientos, pues las noticias económicas suelen ser secas y técnicas.
